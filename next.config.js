@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    // The legacy Resend package bundles an ESM renderer incompatible with React 18.2.
-    serverComponentsExternalPackages: ["resend"],
-  },
   images: {
     remotePatterns: [
       {
@@ -11,6 +7,9 @@ const nextConfig = {
         hostname: "photos.app.goo.gl",
       },
     ],
+  },
+  experimental: {
+    serverActions: true,
   },
 };
 

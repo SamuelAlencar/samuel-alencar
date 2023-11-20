@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -8,7 +9,6 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { FaWhatsapp } from "react-icons/fa6";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -18,42 +18,62 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex min-h-screen w-full flex-col justify-center px-2 text-center"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
-      <p className="eyebrow mb-4">Sistemas • Produtos digitais • E-commerce</p>
+      <div className="flex items-center justify-center">
+        <div className="relative">
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "tween",
+              duration: 0.2,
+            }}
+          >
+            <Image
+              src="/IMG_20220919_121524 (1).jpg"
+              alt="Samuel Alencar"
+              width="611"
+              height="611"
+              quality="95"
+              priority={true}
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+            />
+          </motion.div>
+
+          <motion.span
+            className="absolute bottom-0 right-0 text-4xl"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 125,
+              delay: 0.1,
+              duration: 0.7,
+            }}
+          >
+            👋
+          </motion.span>
+        </div>
+      </div>
+
       <motion.p
-        className="mx-auto mb-5 max-w-3xl px-2 text-3xl font-semibold leading-tight text-gradient sm:px-4 sm:text-6xl"
+        className="mb-4 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{
-          type: "subsets",
-          stiffness: 125,
-          delay: 0.5,
-          duration: 0.7,
-        }}
       >
-        <span>Olá, eu sou Samuel Alencar</span>
-        <br />
-        <span className="text-[0.7em] text-[var(--ink)]">Analista de Sistemas | Full Stack Developer Sênior</span>
+        <span>Olá, bem vindo ao meu portifólio!</span>
       </motion.p>
       <motion.p
-        className="mx-auto mb-10 max-w-2xl px-3 text-base font-light leading-7 text-[var(--muted)] sm:px-4 sm:text-xl sm:leading-relaxed"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{
-          type: "subsets",
-          stiffness: 125,
-          delay: 0.75,
-          duration: 0.7,
-        }}
       >
-        <span className="text-base font-light italic sm:text-xl">
-          "Transformo desafios de negócio em experiências digitais escaláveis, com arquitetura sólida e foco no usuário."
-        </span>
+        <span>Me chamo Samuel Alencar, casado, 39 anos, pai um filha linda. Sou um profissional apaixonado por tecnologias web, bacharel em Sistemas de Informação pela Universidade Bandeirantes em 2011. Com 13 anos de experiência sólida, obtive certificações pelo Grupo Impacta em React + Redux, Reactive Native, JQuery e Javascript.</span>
       </motion.p>
 
       <motion.div
-        className="flex flex-col items-center justify-center gap-3 px-4 text-base font-medium sm:flex-row sm:gap-2 sm:text-lg"
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -62,49 +82,40 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group flex w-full max-w-xs items-center justify-center gap-2 rounded-full bg-[var(--ink)] px-6 py-3 text-white shadow-lg shadow-teal-950/10 outline-none transition hover:-translate-y-0.5 hover:bg-[var(--accent-strong)] focus:scale-105 active:scale-100 sm:w-auto sm:px-7 dark:bg-[#54d2c3] dark:text-[#082326] dark:hover:bg-[#8ae8dc]"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contato");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Entre em contato{" "}
+          Entre e contato{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
-          className="group flex w-full max-w-xs cursor-pointer items-center justify-center gap-2 rounded-full border border-[var(--line-color)] bg-white/70 px-6 py-3 outline-none transition hover:-translate-y-0.5 hover:border-[var(--accent)] hover:bg-white focus:scale-105 active:scale-100 sm:w-auto sm:px-7 dark:bg-white/10 dark:hover:bg-white/15"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/CV.pdf"
-          download="CV.pdf"
+          download
         >
-          Baixar currículo{" "}
+          Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <div className="flex flex-row gap-4">
-          <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://www.linkedin.com/in/samuel-nascimento-alencar/"
-            target="_blank"
-          >
-            <BsLinkedin />
-          </a>
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.linkedin.com/in/samuel-alencar-5b1a2251/"
+          target="_blank"
+        >
+          <BsLinkedin />
+        </a>
 
-          <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://github.com/SamuelAlencar"
-            target="_blank"
-          >
-            <FaGithubSquare />
-          </a>
-          <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://api.whatsapp.com/send?phone=5511952424064"
-            target="_blank"
-          >
-            <FaWhatsapp />
-          </a>
-        </div>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://github.com/SamuelAlencar"
+          target="_blank"
+        >
+          <FaGithubSquare />
+        </a>
       </motion.div>
     </section>
   );
