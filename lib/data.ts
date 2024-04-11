@@ -5,31 +5,38 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import { BsHouse, BsBookHalf, BsCodeSquare, BsFillEnvelopePaperFill, BsPersonBadgeFill } from "react-icons/bs";
 
 export const links = [
   {
     name: "Home",
     hash: "#home",
+    icon: React.createElement(BsHouse),
   },
   {
     name: "Sobre",
     hash: "#about",
+    icon: React.createElement(BsBookHalf),
   },
-  {
-    name: "Projetos",
-    hash: "#projects",
-  },
+  // {
+  //   name: "Projetos",
+  //   hash: "#projects",
+  //   icon: React.createElement(BsHouse),
+  // },
   {
     name: "Skills",
     hash: "#skills",
+    icon: React.createElement(BsCodeSquare),
   },
   {
     name: "Experiência",
     hash: "#experience",
+    icon: React.createElement(BsPersonBadgeFill),
   },
   {
     name: "Contato",
     hash: "#contact",
+    icon: React.createElement(BsFillEnvelopePaperFill),
   },
 ] as const;
 
@@ -63,7 +70,7 @@ export const experiencesData = [
     title: "React / Impacta Tecnologia",
     location: "São Paulo, SP",
     description:
-    "Desenvolvimento de Aplicações Web com React, React Native e Redux",
+      "Desenvolvimento de Aplicações Web com React, React Native e Redux",
     icon: React.createElement(FaReact),
     date: "2019",
   },
@@ -78,11 +85,10 @@ export const experiencesData = [
   {
     title: "Website Development / Impacta Certified Specialist - Profissional",
     location: "São Paulo, SP",
-    description:
-      "JavaScript e JQuery.",
+    description: "JavaScript e JQuery.",
     icon: React.createElement(FaJs),
     date: "2014",
-  }, 
+  },
   {
     title: "JQuery / Impacta Certified Specialist - Profissional",
     location: "São Paulo, SP",
@@ -94,11 +100,10 @@ export const experiencesData = [
   {
     title: "Bachelor of Information Systems",
     location: "Campus Osasco",
-    description:
-      "Universidade Bandeirante de São Paulo",
+    description: "Universidade Bandeirante de São Paulo",
     icon: React.createElement(LuGraduationCap),
     date: "2008 - 2011",
-  },   
+  },
   {
     title: "Assistente de marketing (Tok&Stok)",
     location: "Barueri, SP",
@@ -107,7 +112,6 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "2006 - 2011",
   },
-  
 ] as const;
 
 export const projectsData = [
@@ -150,7 +154,4 @@ export const skillsData = [
   "Oracle CX Commerce(OCC/OSF)",
   "Oracle Integration Cloud(OIC)",
   "Wordpress",
-
-
-
 ] as const;

@@ -1,3 +1,5 @@
+
+import * as React from 'react';
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -14,11 +16,11 @@ export const metadata = {
   description: "Profissional apaixonado por tecnologias web, bacharel em Sistemas de Informação pela Universidade Bandeirantes em 2011. Com 13 anos de experiência sólida...",
 };
 
-export default function RootLayout({
-  children,
-}: {
+export interface RootLayoutProps {
   children: React.ReactNode;
-}) {
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className="!scroll-smooth">
       <body
