@@ -42,14 +42,13 @@ export default function Header() {
                 className={clsx(
                   `flex flex-row justify-start md:justify-center gap-2 items-center w-full ${
                     theme ? "text-white" : "text-white"
-                  }`,
+                  } hover:font-bold active:font-bold`,
                   { "": activeSection === link.name }
                 )}
                 href={link.hash}
                 onClick={() => {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
-                  handleCloseMenu();
                 }}
               >
                 {link.icon}

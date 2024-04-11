@@ -21,10 +21,9 @@ function Header() {
         react_1["default"].createElement("nav", { className: "fixed top-0 w-full bg-gray-800" },
             react_1["default"].createElement("span", { className: "text-white text-3xl absolute md:hidden top-3 cursor-pointer right-5 ", onClick: handleCloseMenu }, closeMenu ? react_1["default"].createElement(bs_1.BsList, { color: (theme === null || theme === void 0 ? void 0 : theme.theme) === "light" ? "black" : "white" }) : react_1["default"].createElement(bs_1.BsXLg, null)),
             react_1["default"].createElement("ul", { className: "max-w-7xl mx-auto " + (closeMenu ? "hidden" : "flex") + " flex-col md:flex-row  justify-center items-start md:items-center gap-6 p-8 md:p-4" }, data_1.links.map(function (link) { return (react_1["default"].createElement(framer_motion_1.motion.li, { className: "w-full flex justify-start md:justify-center items-center border-b-[.3px] md:border-b-0 border-gray-500 pb-4 md:pb-0", key: link.hash, initial: { y: -100, opacity: 0 }, animate: { y: 0, opacity: 1 } },
-                react_1["default"].createElement(link_1["default"], { className: clsx_1["default"]("flex flex-row justify-start md:justify-center gap-2 items-center w-full " + (theme ? "text-white" : "text-white"), { "": activeSection === link.name }), href: link.hash, onClick: function () {
+                react_1["default"].createElement(link_1["default"], { className: clsx_1["default"]("flex flex-row justify-start md:justify-center gap-2 items-center w-full " + (theme ? "text-white" : "text-white") + " hover:font-bold active:font-bold", { "": activeSection === link.name }), href: link.hash, onClick: function () {
                         setActiveSection(link.name);
                         setTimeOfLastClick(Date.now());
-                        handleCloseMenu();
                     } },
                     link.icon,
                     link.name,

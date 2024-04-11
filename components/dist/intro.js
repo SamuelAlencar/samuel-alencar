@@ -27,10 +27,10 @@ function Intro() {
                         delay: 0.1,
                         duration: 0.7
                     } }, "\uD83D\uDC4B"))),
-        react_1["default"].createElement(framer_motion_1.motion.p, { className: "mb-4 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl", initial: { opacity: 0, y: 100 }, animate: { opacity: 1, y: 0 } },
-            react_1["default"].createElement("span", null, "Ol\u00E1, bem vindo ao meu portif\u00F3lio!")),
-        react_1["default"].createElement(framer_motion_1.motion.p, { className: "mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl", initial: { opacity: 0, y: 100 }, animate: { opacity: 1, y: 0 } },
-            react_1["default"].createElement("span", { className: "text-xl" }, "Meu nome \u00E9 Samuel Alencar, sou casado e pai de uma filha linda. Sou um profissional apaixonado por tecnologias web e tenho uma s\u00F3lida experi\u00EAncia de mais de 15 anos na \u00E1rea.")),
+        react_1["default"].createElement(framer_motion_1.motion.p, { className: "mb-4 mt-4 px-4 text-3xl font-medium !leading-[1.5] sm:text-1xl", initial: { opacity: 0, y: 100 }, animate: { opacity: 1, y: 0 } },
+            react_1["default"].createElement("span", null, "Ol\u00E1, eu sou Samuel Alencar :)")),
+        react_1["default"].createElement(framer_motion_1.motion.p, { className: "mb-10  px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl", initial: { opacity: 0, y: 100 }, animate: { opacity: 1, y: 0 } },
+            react_1["default"].createElement("span", { className: "text-xl" }, "Desenvolvedor Front-end / Analista de Sistemas")),
         react_1["default"].createElement(framer_motion_1.motion.div, { className: "flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium", initial: { opacity: 0, y: 100 }, animate: { opacity: 1, y: 0 }, transition: {
                 delay: 0.1
             } },
@@ -45,9 +45,11 @@ function Intro() {
                 "Download CV",
                 " ",
                 react_1["default"].createElement(hi_1.HiDownload, { className: "opacity-60 group-hover:translate-y-1 transition" })),
-            react_1["default"].createElement("a", { className: "bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60", href: "https://www.linkedin.com/in/samuel-alencar-5b1a2251/", target: "_blank" },
-                react_1["default"].createElement(bs_1.BsLinkedin, null)),
-            react_1["default"].createElement("a", { className: "bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60", href: "https://github.com/SamuelAlencar", target: "_blank" },
-                react_1["default"].createElement(fa_1.FaGithubSquare, null)))));
+            react_1["default"].createElement("div", { className: "flex flex-row gap-4" },
+                react_1["default"].createElement("a", { className: "bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60", href: "https://www.linkedin.com/in/samuel-alencar-5b1a2251/", target: "_blank" },
+                    react_1["default"].createElement(bs_1.BsLinkedin, null)),
+                react_1["default"].createElement("a", { className: "bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60", href: "https://github.com/SamuelAlencar", target: "_blank" },
+                    react_1["default"].createElement(fa_1.FaGithubSquare, null)))),
+        react_1["default"].createElement("hr", { className: "my-10" })));
 }
 exports["default"] = Intro;

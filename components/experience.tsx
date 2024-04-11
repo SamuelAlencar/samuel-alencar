@@ -49,6 +49,20 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
+
+              {item?.flags && (
+                <ul className="flex flex-wrap mt-4 gap-2">
+                  {item.flags.map((tag) => (
+                    <li
+                      key={tag}
+                      className="bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-200 px-3 py-1 rounded-full"  
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

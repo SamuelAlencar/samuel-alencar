@@ -58,18 +58,20 @@ export default function Intro() {
       </div>
 
       <motion.p
-        className="mb-4 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
+        className="mb-4 mt-4 px-4 text-3xl font-medium !leading-[1.5] sm:text-1xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span>Olá, bem vindo ao meu portifólio!</span>
+        <span>Olá, eu sou Samuel Alencar :)</span>
       </motion.p>
       <motion.p
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
+        className="mb-10  px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="text-xl">Meu nome é Samuel Alencar, sou casado e pai de uma filha linda. Sou um profissional apaixonado por tecnologias web e tenho uma sólida experiência de mais de 15 anos na área.</span>
+        <span className="text-xl">
+          Desenvolvedor Front-end / Analista de Sistemas
+        </span>
       </motion.p>
 
       <motion.div
@@ -101,22 +103,25 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/samuel-alencar-5b1a2251/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
+        <div className="flex flex-row gap-4">
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://www.linkedin.com/in/samuel-alencar-5b1a2251/"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/SamuelAlencar"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://github.com/SamuelAlencar"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
+      <hr className="my-10" />
     </section>
   );
 }
