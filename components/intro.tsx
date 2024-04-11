@@ -69,7 +69,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span>Me chamo Samuel Alencar, casado, 39 anos, pai um filha linda. Sou um profissional apaixonado por tecnologias web, bacharel em Sistemas de Informação pela Universidade Bandeirantes em 2011. Com 13 anos de experiência sólida, obtive certificações pelo Grupo Impacta em React + Redux, Reactive Native, JQuery e Javascript.</span>
+        <span className="text-xl">Meu nome é Samuel Alencar, sou casado e pai de uma filha linda. Sou um profissional apaixonado por tecnologias web e tenho uma sólida experiência de mais de 15 anos na área.</span>
       </motion.p>
 
       <motion.div

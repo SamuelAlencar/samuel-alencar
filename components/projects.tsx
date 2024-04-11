@@ -6,7 +6,12 @@ import { projectsData } from "@/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
 
-export default function Projects() {
+
+export interface ProjectsProps {
+  // Define the props for the Projects component here
+}
+
+export default function Projects(props: ProjectsProps) {
   const { ref } = useSectionInView("Projetos", 0.5);
 
   return (

@@ -18,11 +18,11 @@ export const links = [
     hash: "#about",
     icon: React.createElement(BsBookHalf),
   },
-  // {
-  //   name: "Projetos",
-  //   hash: "#projects",
-  //   icon: React.createElement(BsHouse),
-  // },
+  {
+    name: "Projetos",
+    hash: "#projects",
+    icon: React.createElement(BsHouse),
+  },
   {
     name: "Skills",
     hash: "#skills",
