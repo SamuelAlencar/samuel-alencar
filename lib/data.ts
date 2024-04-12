@@ -5,6 +5,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import tokstokProjectImg from "@/public/tokstok-project.png";
+import yamahaProjectImg from "@/public/yamaha-project.png";
+import carrefourProjectImg from "@/public/carrefour-project.png";
+import salonlineProjectImg from "@/public/salonline-project.png";
 import { BsHouse, BsBookHalf, BsCodeSquare, BsFillEnvelopePaperFill, BsPersonBadgeFill } from "react-icons/bs";
 
 export const links = [
@@ -180,21 +184,28 @@ export const projectsData = [
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    imageUrl: tokstokProjectImg,
   },
   {
     title: "Yamaha Moto - E-commerce",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: yamahaProjectImg,
   },
   {
     title: "Carrefour - Portal BackOffice",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: carrefourProjectImg,
+  },
+  {
+    title: "Salon Line",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    imageUrl: salonlineProjectImg,
   },
 ] as const;
 
