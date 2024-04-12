@@ -1,15 +1,19 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaJs, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import tokstokProjectImg from "@/public/tokstok-project.png";
 import yamahaProjectImg from "@/public/yamaha-project.png";
 import carrefourProjectImg from "@/public/carrefour-project.png";
 import salonlineProjectImg from "@/public/salonline-project.png";
-import { BsHouse, BsBookHalf, BsCodeSquare, BsFillEnvelopePaperFill, BsPersonBadgeFill } from "react-icons/bs";
+import livelobradesProjectImg from "@/public/livelobradescoseguros-project.png";
+import {
+  BsHouse,
+  BsBookHalf,
+  BsPencilSquare,
+  BsCodeSquare,
+  BsFillEnvelopePaperFill,
+  BsPersonBadgeFill,
+} from "react-icons/bs";
 
 export const links = [
   {
@@ -26,11 +30,11 @@ export const links = [
     name: "Experiência",
     hash: "#experience",
     icon: React.createElement(BsPersonBadgeFill),
-  },  
+  },
   {
     name: "Projetos",
     hash: "#projects",
-    icon: React.createElement(BsHouse),
+    icon: React.createElement(BsPencilSquare),
   },
   {
     name: "Skills",
@@ -64,7 +68,7 @@ export const experiencesData = [
       "Git",
       "Gitlab",
       "GitHub",
-      "Bitbucket",      
+      "Bitbucket",
       "Postman",
       "Insomnia",
       "MySQL",
@@ -78,8 +82,8 @@ export const experiencesData = [
       "Oracle Commerce Cloud",
       "Linx Commerce",
       "BSeller",
-      "TOTVs Protheus"
-    ]
+      "TOTVs Protheus",
+    ],
   },
   {
     title: "Analista de Sistemas Ecommerce / Software Developer (Carrefour)",
@@ -106,8 +110,8 @@ export const experiencesData = [
       "Jira",
       "Confluence",
       "Figma",
-      "Adobe XD"
-    ]
+      "Adobe XD",
+    ],
   },
   {
     title: "Desenvolvedor Front-End (Compass.UOL)",
@@ -123,12 +127,12 @@ export const experiencesData = [
       "Knouckout",
       "React",
       "Git",
-      "Gitlab",      
+      "Gitlab",
       "Postman",
       "Oracle Database",
       "Oracle Commerce Cloud",
       "Figma",
-    ]    
+    ],
   },
   {
     title: "Desenvolvedor Front-End (Tok&Stok)",
@@ -150,8 +154,8 @@ export const experiencesData = [
       "GitHub",
       "VTEX Legancy",
       "IBM WebSphere Commerce",
-      "Photoshop", 
-    ]    
+      "Photoshop",
+    ],
   },
   {
     title: "Bachelor of Information Systems",
@@ -159,7 +163,7 @@ export const experiencesData = [
     description: "Universidade Bandeirante de São Paulo",
     icon: React.createElement(LuGraduationCap),
     date: "2008 - 2011",
-    flags: []    
+    flags: [],
   },
   {
     title: "Assistente de marketing (Tok&Stok)",
@@ -168,105 +172,119 @@ export const experiencesData = [
       "Produção de fotos still para abastecimento do site, edição de imagens com Photoshop, responsável pela organização do banco de imagens da empresa, cadastro de novos produtos e manutenção de cadastros já existentes no site, responsável pela execução dos processos logísticos e organizacionais de produtos para fotos em estúdio e externas, criação de comunicados digitais para comunicação interna e atualização e manutenção da Intranet",
     icon: React.createElement(CgWorkAlt),
     date: "2006 - 2011",
-    flags: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "JQuery",
-      "Photoshop"
-    ]    
+    flags: ["HTML", "CSS", "Javascript", "JQuery", "Photoshop"],
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "Tok&Stok E-commerce V1, V2, V3 e V4",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: tokstokProjectImg,
-  },
-  {
-    title: "Yamaha Moto - E-commerce",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: yamahaProjectImg,
-  },
-  {
-    title: "Carrefour - Portal BackOffice",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: carrefourProjectImg,
-  },
-  {
     title: "Salon Line",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Atuei como Analista de Sistemas, focado no desenvolvimento e aprimoramento do E-commerce, incluindo segurança do site, novas funcionalidades, hotsites, landing pages e correção de bugs.",
+    tags: ["OCC", "React", "Mobile First", "Chakra UI", "Swiper"],
     imageUrl: salonlineProjectImg,
+    linkUrl: "https://salonline.com.br/",
+  },
+  {
+    title: "Carrefour",
+    description:
+      "Integrante do time responsável pelo desenvolvimento do E-commerce e do Portal BackOffice, atuei como Desenvolvedor Sr. do time.",
+    tags: [
+      "VTEX",
+      "React",
+      "Microfrontends",
+      "Bootstrap",
+      "TypeScript",
+      "Mobile First",
+      "GCP",
+    ],
+    imageUrl: carrefourProjectImg,
+    linkUrl: "https://www.carrefour.com.br/",
+  },
+  {
+    title: "Yamaha Motor",
+    description:
+      "Nesse projeto trabalhei na migração de versão do E-commerce e na evolução do site com novas funcionalidades incríveis, tais como carroussel 360°, simulação de financiamento em real time e Landing pages com animações.",
+    tags: ["OCC", "Knouckout js", "JQuery", "Responsive", "Slick", "Bootstrap"],
+    imageUrl: yamahaProjectImg,
+    linkUrl: "https://www.yamaha-motor.com.br/",
+  },
+  {
+    title: "Livelo",
+    description:
+      "Nesse projeto desafiador atuei como Desenvolvedor Front-end Sr., desenvolvendo features, dando manutenção e realizando integrações de alta complexidade entres sistemas.",
+    tags: ["OCC", "Knouckout js", "JQuery", "Responsive", "Slick", "Bootstrap"],
+    imageUrl: livelobradesProjectImg,
+    linkUrl: "https://www.livelo.com.br/",
+  },
+  {
+    title: "Tok&Stok E-commerce",
+    description:
+      "Trabalhei em 4 versões do E-Commerce e em um Blog e durante 7 anos atuei como desenvolvedor front-end.",
+    tags: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap", "Photoshop", "Slick","Oracle DB", "Git", "GitHub"],
+    imageUrl: tokstokProjectImg,
+    linkUrl: "https://www.tokstok.com.br/",
   },
 ] as const;
 
 export const skillsData = [
-"HTML5",
-"CSS3",
-"Javascript",
-"JQuery",
-"TypeScript",
-"Less/Sass",
-"Tailwind",
-"Bootstrap",
-"Skeleton",
-"Bulma",
+  "HTML5",
+  "CSS3",
+  "Javascript",
+  "JQuery",
+  "TypeScript",
+  "Less/Sass",
+  "Tailwind",
+  "Bootstrap",
+  "Skeleton",
+  "Bulma",
 
-"React",
-"Redux",
-"NextJs",
+  "React",
+  "Redux",
+  "NextJs",
 
-"Angular",
+  "Angular",
 
-"Vue",
+  "Vue",
 
-"NodeJs",
-"NestJs",
-"Prisma",
+  "NodeJs",
+  "NestJs",
+  "Prisma",
 
-"MongoDB",
-"Firebase Realtime Database",
-"Redis",
+  "MongoDB",
+  "Firebase Realtime Database",
+  "Redis",
 
-"MySQL",
-"PostgreSQL",
-"Oracle Database",
-"Google Cloud SQL",
+  "MySQL",
+  "PostgreSQL",
+  "Oracle Database",
+  "Google Cloud SQL",
 
-"Git",
-"GitHub",
-"GitLab",
-"Bitbucket",
+  "Git",
+  "GitHub",
+  "GitLab",
+  "Bitbucket",
 
-"Vercel",
-"Google Cloud Platform",
-"Oracle Cloud",
+  "Vercel",
+  "Google Cloud Platform",
+  "Oracle Cloud",
 
-"Vtex",
-"Vtex IO",
-"Oracle Commerce Cloud",
-"IBM WebSphere Commerce",
-"Oracle Integration Cloud",
+  "Vtex",
+  "Vtex IO",
+  "Oracle Commerce Cloud",
+  "IBM WebSphere Commerce",
+  "Oracle Integration Cloud",
 
-"Jira",
-"Trello",
-"Notion",
+  "Jira",
+  "Trello",
+  "Notion",
 
-"Adobe Photoshop",
-"Adobe XD",
-"Miro",
-"Figma",
+  "Adobe Photoshop",
+  "Adobe XD",
+  "Miro",
+  "Figma",
 
-"Codium",
-"Copilot",
-"AWS CodeWhisperer",
+  "Codium",
+  "Copilot",
+  "AWS CodeWhisperer",
 ] as const;

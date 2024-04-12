@@ -37,7 +37,7 @@ export default function Header() {
           )}
         </span>
         <ul
-          className={`max-w-7xl mx-auto  ${
+          className={`max-w-5xl mx-auto  ${
             closeMenu ? "hidden md:flex" : "flex"
           } flex-col md:flex-row  justify-center items-start md:items-center gap-6 p-8 md:p-4`}
         >
