@@ -18,7 +18,7 @@ export default function Experience() {
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>Experiência</SectionHeading>
-      <VerticalTimeline lineColor="" >
+      <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
@@ -29,6 +29,7 @@ export default function Experience() {
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
+                visibility: "visible",
               }}
               contentArrowStyle={{
                 borderRight:
@@ -42,6 +43,7 @@ export default function Experience() {
                 background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
+                visibility: "visible",
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
@@ -49,20 +51,24 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
+              {item.flags.length > 1 ? (
+                <h3 className="font-semibold capitalize pt-4">
+                  Tecnologias utilizadas
+                </h3>
+              ) : null}
 
               {item?.flags && (
                 <ul className="flex flex-wrap mt-4 gap-2">
-                  {item.flags.map((tag) => (
+                  {item.flags.map((flag) => (
                     <li
-                      key={tag}
-                      className="bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-200 px-3 py-1 rounded-full"  
+                      key={flag}
+                      className="text-xs bg-white borderBlack rounded-xl px-2 py-1 dark:bg-white/10 dark:text-white/80 hover:transform hover:scale-105 transition-all cursor-pointer"
                     >
-                      {tag}
+                      {flag}
                     </li>
                   ))}
                 </ul>
               )}
-
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

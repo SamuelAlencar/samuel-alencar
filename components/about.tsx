@@ -37,6 +37,8 @@ export default function About() {
       <p>
       Minha expertise abrange implantações de E-Commerces em diversas plataformas, desde soluções open source como Opencart, Magento, Wordpress e All-In, até plataformas empresariais como IBM-WebSphere, Oracle CX Commerce(OCC/OSF), Oracle Integration Cloud(OIC), Oracle Responsys, VTEX, entre outras. Estou comprometido em impulsionar o sucesso através da inovação e soluções tecnológicas.
       </p>
+      <hr className="my-10" />
+
     </motion.section>
   );
 }

@@ -15,6 +15,7 @@ export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
   function handleCloseMenu() {
+    console.log(closeMenu)
     setCloseMenu(!closeMenu);
   }
   return (
