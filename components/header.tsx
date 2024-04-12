@@ -11,26 +11,36 @@ import { BsXLg, BsList } from "react-icons/bs";
 
 export default function Header() {
   const theme = useTheme();
-  const [closeMenu, setCloseMenu] = React.useState(false);
+  const [closeMenu, setCloseMenu] = React.useState(true);
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
   function handleCloseMenu() {
     setCloseMenu(!closeMenu);
   }
   return (
-
     <header className="z-[999] relative">
-
       <motion.div
-        className=""
+        className="hidden md:block"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
 
       <nav className="fixed top-0 w-full bg-gray-800">
-        <span className = {`text-white text-3xl absolute md:hidden top-3 cursor-pointer right-5 `} onClick={handleCloseMenu}>{closeMenu ? <BsList color={theme?.theme === "light"  ? "black" : "white"}/> : <BsXLg />}</span>
-
-        <ul className={`max-w-7xl mx-auto ${closeMenu ? "hidden" : "flex"} flex-col md:flex-row  justify-center items-start md:items-center gap-6 p-8 md:p-4`}>
+        <span
+          className={`text-white text-3xl absolute md:hidden top-3 cursor-pointer right-5 `}
+          onClick={handleCloseMenu}
+        >
+          {closeMenu ? (
+            <BsList color={theme?.theme === "light" ? "black" : "white"} />
+          ) : (
+            <BsXLg />
+          )}
+        </span>
+        <ul
+          className={`max-w-7xl mx-auto  ${
+            closeMenu ? "hidden md:flex" : "flex"
+          } flex-col md:flex-row  justify-center items-start md:items-center gap-6 p-8 md:p-4`}
+        >
           {links.map((link) => (
             <motion.li
               className="w-full flex justify-start md:justify-center items-center border-b-[.3px] md:border-b-0 border-gray-500 pb-4 md:pb-0"

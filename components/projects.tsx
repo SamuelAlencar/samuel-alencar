@@ -8,7 +8,17 @@ import { useSectionInView } from "@/lib/hooks";
 
 
 export interface ProjectsProps {
-  // Define the props for the Projects component here
+  ref: React.RefObject<HTMLDivElement>;
+  inView: boolean;
+
+  setActiveSection: (sectionName: string) => void;
+  timeOfLastClick: number;
+  setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
+
+  activeSection: string;
+  index: number;
+
+  sectionInView: boolean;
 }
 
 export default function Projects(props: ProjectsProps) {
@@ -16,7 +26,7 @@ export default function Projects(props: ProjectsProps) {
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionHeading>My projects</SectionHeading>
+      <SectionHeading>Projetos</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
