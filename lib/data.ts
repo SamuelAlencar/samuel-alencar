@@ -137,6 +137,7 @@ export const experiencesData = [
     flags: [
       "HTML",
       "CSS",
+      "Bootstrap",
       "Javascript",
       "JQuery",
       "Dojojs",
