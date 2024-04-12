@@ -124,7 +124,6 @@ export const experiencesData = [
       "Oracle Database",
       "Oracle Commerce Cloud",
       "Figma",
-      "Oracle Commerce Cloud",
     ]    
   },
   {
