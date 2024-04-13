@@ -9,6 +9,8 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { FaWhatsapp } from "react-icons/fa6";
+
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -48,7 +50,7 @@ export default function Intro() {
             transition={{
               type: "spring",
               stiffness: 125,
-              delay: 0.1,
+              delay: 0.5,
               duration: 0.7,
             }}
           >
@@ -58,19 +60,19 @@ export default function Intro() {
       </div>
 
       <motion.p
-        className="mb-4 mt-4 px-4 text-3xl font-medium !leading-[1.5] sm:text-1xl"
+        className="mb-4 mt-4 px-4 text-2xl md:text-3xl font-medium !leading-[1.5] sm:text-1xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span>Olá, eu sou Samuel Alencar :)</span>
+        <span>{`Olá, eu sou Samuel Alencar </> Web Developer`}</span>
       </motion.p>
       <motion.p
         className="mb-10  px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="text-xl">
-          Desenvolvedor Front-end / Analista de Sistemas
+        <span className="text-xl font-light italic">
+        “Transformando ideias complexas em experiências digitais simples e elegantes, pixel por pixel.”
         </span>
       </motion.p>
 
@@ -118,6 +120,13 @@ export default function Intro() {
             target="_blank"
           >
             <FaGithubSquare />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://api.whatsapp.com/send?phone=5511952424064"
+            target="_blank"
+          >
+            <FaWhatsapp />
           </a>
         </div>
       </motion.div>

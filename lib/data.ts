@@ -1,5 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
+import { MdPersonSearch } from "react-icons/md";
 import { LuGraduationCap } from "react-icons/lu";
 import tokstokProjectImg from "@/public/tokstok-project.png";
 import yamahaProjectImg from "@/public/yamaha-project.png";
@@ -24,7 +25,7 @@ export const links = [
   {
     name: "Sobre",
     hash: "#about",
-    icon: React.createElement(BsBookHalf),
+    icon: React.createElement(MdPersonSearch),
   },
   {
     name: "Experiência",
@@ -40,6 +41,11 @@ export const links = [
     name: "Skills",
     hash: "#skills",
     icon: React.createElement(BsCodeSquare),
+  },
+  {
+    name: "Cursos",
+    hash: "#courses",
+    icon: React.createElement(BsBookHalf),
   },
   {
     name: "Contato",
@@ -221,7 +227,7 @@ export const projectsData = [
     title: "Tok&Stok E-commerce",
     description:
       "Trabalhei em 4 versões do E-Commerce e em um Blog e durante 7 anos atuei como desenvolvedor front-end.",
-    tags: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap", "Photoshop", "Slick","Oracle DB", "Git", "GitHub"],
+    tags: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap", "Photoshop", "Slick","Oracle DB"],
     imageUrl: tokstokProjectImg,
     linkUrl: "https://www.tokstok.com.br/",
   },
@@ -287,4 +293,70 @@ export const skillsData = [
   "Codium",
   "Copilot",
   "AWS CodeWhisperer",
+] as const;
+export const cousersData = [
+  {
+    title: "Produtividade com IA",
+    institution: "Rocketseat",
+    workload: "5h",
+    initialDate: "26/03/2024",
+    endDate: "01/04/2024",
+  },
+  {
+    title: "Clean Code",
+    institution: "Rocketseat",
+    workload: "5h",
+    initialDate: "22/03/2024",
+    endDate: "26/03/2024",
+  },
+  {
+    title: "Redux + Zustand",
+    institution: "Rocketseat",
+    workload: "3h",
+    initialDate: "11/03/2024",
+    endDate: "18/03/2024",
+  },
+  {
+    title: "Next.js App Router e Testes",
+    institution: "Rocketseat",
+    workload: "6h",
+    initialDate: "28/01/2024",
+    endDate: "15/03/2024",
+  },
+  {
+    title: "Node js",
+    institution: "Rocketseat",
+    workload: "50h",
+    initialDate: "28/11/2023",
+    endDate: "26/01/2024",
+  },
+  {
+    title: "React js",
+    institution: "Alura",
+    workload: "12h",
+    initialDate: "01/03/2022",
+    endDate: "01/03/2022",
+  },
+  {
+    title: "React.JS + Redux e React Native",
+    institution: "Impacta Treinamentos",
+    workload: "40h",
+    initialDate: "28/09/2019",
+    endDate: "09/11/2019",
+  },
+  {
+    title: "JQuery",
+    institution: "Impacta Treinamentos",
+    workload: "40h",
+    initialDate: "01/11/2015",
+    endDate: "30/11/2015",
+  },
+  {
+    title: "Javascript",
+    institution: "Impacta Treinamentos",
+    workload: "40h",
+    initialDate: "12/04/2014",
+    endDate: "24/05/2014",
+  },
+
 ] as const;

@@ -50,9 +50,9 @@ export default function Header() {
             >
               <Link
                 className={clsx(
-                  `flex flex-row justify-start md:justify-center gap-2 items-center w-full ${
+                  `flex flex-row justify-start text-md md:justify-center gap-2 items-center w-full ${
                     theme ? "text-white" : "text-white"
-                  } hover:font-bold active:font-bold`,
+                  } hover:underline active:underline `,
                   { "": activeSection === link.name }
                 )}
                 href={link.hash}
@@ -65,7 +65,6 @@ export default function Header() {
                 {link.name}
                 {link.name === activeSection && (
                   <motion.span
-                    className=""
                     layoutId="activeSection"
                     transition={{
                       type: "spring",
