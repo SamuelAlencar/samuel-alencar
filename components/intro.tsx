@@ -63,6 +63,12 @@ export default function Intro() {
         className="mb-4 mt-4 px-4 text-2xl md:text-3xl font-medium !leading-[1.5] sm:text-1xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "subsets",
+          stiffness: 125,
+          delay: 0.5,
+          duration: 0.7,
+        }}
       >
         <span>{`Olá, eu sou Samuel Alencar </> Web Developer`}</span>
       </motion.p>
@@ -70,6 +76,12 @@ export default function Intro() {
         className="mb-10  px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "subsets",
+          stiffness: 125,
+          delay: 0.75,
+          duration: 0.7,
+        }}
       >
         <span className="text-xl font-light italic">
         “Transformando ideias complexas em experiências digitais simples e elegantes, pixel por pixel.”
@@ -130,7 +142,6 @@ export default function Intro() {
           </a>
         </div>
       </motion.div>
-      <hr className="my-10" />
     </section>
   );
 }

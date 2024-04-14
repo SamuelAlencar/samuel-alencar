@@ -73,7 +73,6 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-      <hr className="my-10" />
     </section>
   );
 }
