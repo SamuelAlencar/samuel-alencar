@@ -14,7 +14,12 @@ export default function About() {
       className="mb-28 mt-28 max-w-[45rem] leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
+      transition={{
+        type: "subsets",
+        stiffness: 125,
+        delay: 0.75,
+        duration: 0.2,
+      }}
       id="about"
     >
       <SectionHeading>
