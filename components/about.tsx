@@ -25,22 +25,22 @@ export default function About() {
         consolidada como Analista de Sistemas E-commerce e Desenvolvedor
         Front-End.
       </p>
-      <p className="pb-4 align-left">
+      <p className="pb-4 align-left font-extralight">
         Ao longo da minha trajetória, destaco minha habilidade em liderança
         técnica, desenvolvimento de aplicações web e integrações de sistemas.
         Minha especialização abrange tecnologias como React.js, Node.js, e
         frameworks associados.
       </p>
-      <p className="pb-4 align-left">
+      <p className="pb-4 align-left font-extralight">
         Possuo competências comprovadas em metodologias ágeis, controle de
         versão e gestão eficiente de backlog.{" "}
       </p>
-      <p className="pb-4 align-left">
+      <p className="pb-4 align-left font-extralight">
         Meu histórico em empresas líderes do setor reflete minha expertise em
         resolução de problemas, arquitetura front-end e implementação de
         soluções inovadoras.{" "}
       </p>
-      <p className="pb-4 align-left">
+      <p className="pb-4 align-left font-extralight">
         Estou em busca de desafios em um ambiente dinâmico, onde eu possa
         aplicar e ampliar minhas habilidades.
       </p>
