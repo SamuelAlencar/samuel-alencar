@@ -46,13 +46,13 @@ export default function Experience() {
                 visibility: "visible",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 font-light text-gray-700 dark:text-white/75">
+              <h3 className="!font-normal text-lg">{item.title}</h3>
+              <p className="!font-light !mt-0">{item.location}</p>
+              <p className="!mt-1 !font-extralight text-gray-700 dark:text-white/75 ">
                 {item.description}
               </p>
               {item.flags.length > 1 ? (
-                <h3 className="font-semibold capitalize pt-4">
+                <h3 className="font-normal pt-4">
                   Tecnologias utilizadas
                 </h3>
               ) : null}

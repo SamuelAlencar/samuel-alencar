@@ -226,7 +226,7 @@ export const projectsData = [
   {
     title: "Tok&Stok E-commerce",
     description:
-      "Trabalhei em 4 versões do E-Commerce e em um Blog e durante 7 anos atuei como desenvolvedor front-end.",
+      "Trabalhei em 4 versões do E-Commerce, com foco no desenvolvimento e aprimoramento, sendo que atuei durante 7 anos como desenvolvedor front-end. ",
     tags: ["HTML", "CSS", "Javascript", "JQuery", "Bootstrap", "Photoshop", "Slick","Oracle DB"],
     imageUrl: tokstokProjectImg,
     linkUrl: "https://www.tokstok.com.br/",
