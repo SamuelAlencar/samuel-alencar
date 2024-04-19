@@ -9,7 +9,7 @@ describe("Component: Footer", () => {
     const { getByText } = render(<Footer />);
     expect(
       getByText(
-        "@2023 Samuel Alencar - Web Developer. Todos os direitos reservados."
+        "@2024 Samuel Alencar - Web Developer. Todos os direitos reservados."
       )
     ).toBeInTheDocument();
     expect(
