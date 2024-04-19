@@ -9,7 +9,6 @@
 # testing
 /coverage
 jest.config.js
-__mocks__
 
 # next.js
 /.next/

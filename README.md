@@ -1,5 +1,3 @@
-
-```markdown
 # Portfolio Package
 
 Este pacote fornece os scripts e dependências necessários para configurar um site de portfólio. Ele inclui ferramentas para desenvolvimento, construção, teste e implantação.
@@ -14,11 +12,34 @@ yarn install
 
 ## Scripts
 
+```bash
+yarn run dev
+```
 - **dev**: Executa o servidor de desenvolvimento.
+
+```bash
+yarn run build
+```
 - **build**: Constrói a aplicação de produção.
+
+```bash
+yarn run start
+```
 - **start**: Inicia o servidor de produção.
+
+```bash
+yarn run lint
+```
 - **lint**: Analisa o código-fonte.
+
+```bash
+yarn run test
+```
 - **test**: Executa testes em modo de observação.
+
+```bash
+yarn run coverage
+```
 - **coverage**: Gera um relatório de cobertura de testes.
 
 ## Dependências
