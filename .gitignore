@@ -4,9 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+.babelrc
 
 # testing
 /coverage
+jest.config.js
+__mocks__
 
 # next.js
 /.next/

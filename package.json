@@ -6,11 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --watchAll",
+    "coverage": "jest --coverage"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.24.1",
     "@react-email/components": "0.0.11",
     "@react-email/tailwind": "^0.0.15",
+    "@types/babel__generator": "^7.6.8",
     "@vercel/analytics": "^1.1.1",
     "axios": "^1.6.2",
     "chatgpt": "^5.2.5",
@@ -23,14 +27,17 @@
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.12.0",
-    "react-intersection-observer": "^9.5.3",
     "react-vertical-timeline-component": "^3.6.0",
     "resend": "1.0.0",
     "sharp": "^0.32.6",
     "swr": "^2.2.4",
+    "text-encoding": "^0.7.0",
     "vest": "^5.1.4"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.2",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20",
     "@types/react": "^18.2.77",
     "@types/react-dom": "^18.2.25",
@@ -38,12 +45,18 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
+    "esm": "^3.2.25",
+    "intersection-observer": "^0.12.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-environment-jsdom-sixteen": "^2.0.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
+    "ts-jest": "^29.1.2",
     "typescript": "^5"
   },
   "main": "index.js",
   "repository": "https://github.com/SamuelAlencar/samuel-alencar.git",
-  "author": "samuel_alencar <samuel_alencar@carrefour.com>",
+  "author": "samuel_alencar <samuelalencar>",
   "license": "MIT"
 }

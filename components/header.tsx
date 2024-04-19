@@ -2,11 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
+import { links } from "../lib/data";
 import Link from "next/link";
 import clsx from "clsx";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import { useTheme } from "@/context/theme-context";
+import { useActiveSectionContext } from "../context/active-section-context";
+import { useTheme } from "../context/theme-context";
 import { BsXLg, BsList } from "react-icons/bs";
 
 export default function Header() {

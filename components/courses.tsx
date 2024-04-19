@@ -2,8 +2,8 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { cousersData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
+import { cousersData } from "../lib/data";
+import { useSectionInView } from "../lib/hooks";
 import { motion } from "framer-motion";
 
 import { LiaUniversitySolid } from "react-icons/lia";
