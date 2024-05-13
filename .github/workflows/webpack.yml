@@ -26,3 +26,11 @@ jobs:
       run: |
         npm install
         npx webpack
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: build
+        path: build
+
+        
