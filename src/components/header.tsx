@@ -2,11 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
+import { links } from "../lib/data";
 import Link from "next/link";
 import clsx from "clsx";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import { useTheme } from "@/context/theme-context";
+import { useActiveSectionContext } from "../context/active-section-context";
+import { useTheme } from "../context/theme-context";
 import { BsXLg, BsList } from "react-icons/bs";
 
 export default function Header() {
@@ -18,14 +18,16 @@ export default function Header() {
     setCloseMenu(!closeMenu);
   }
   return (
-    <header className="relative z-[999]">
-      <nav className="group fixed left-1/2 top-3 w-[calc(100%-1.5rem)] -translate-x-1/2 rounded-2xl border border-white/20 bg-[#0b2023]/90 shadow-2xl shadow-teal-950/20 backdrop-blur-xl transition-all duration-300 md:left-5 md:top-1/2 md:w-[4.75rem] md:-translate-y-1/2 md:translate-x-0 md:rounded-[1.75rem] md:hover:w-56">
-        <div className="hidden items-center gap-3 border-b border-white/10 px-4 py-5 md:flex">
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-teal-300 to-cyan-500 text-sm font-black text-[#092023] shadow-lg shadow-teal-400/20">SA</span>
-          <span className="whitespace-nowrap text-xs font-semibold tracking-[0.18em] text-white/80 opacity-0 transition group-hover:opacity-100">COMMAND DECK</span>
-        </div>
+    <header className="z-[999] relative">
+      <motion.div
+        className="hidden md:block"
+        initial={{ y: -100, x: "-50%", opacity: 0 }}
+        animate={{ y: 0, x: "-50%", opacity: 1 }}
+      ></motion.div>
+
+      <nav className="fixed top-0 w-full bg-gray-800">
         <span
-          className="absolute right-5 top-3 cursor-pointer text-3xl text-white md:hidden"
+          className={`text-white text-3xl absolute md:hidden top-3 cursor-pointer right-5 `}
           onClick={handleCloseMenu}
         >
           {closeMenu ? (
@@ -35,23 +37,23 @@ export default function Header() {
           )}
         </span>
         <ul
-          className={`mx-auto max-w-5xl ${
+          className={`max-w-5xl mx-auto  ${
             closeMenu ? "hidden md:flex" : "flex"
-          } flex-col items-start justify-center gap-2 p-8 md:items-stretch md:gap-3 md:p-3`}
+          } flex-col md:flex-row  justify-center items-start md:items-center gap-6 p-8 md:p-4`}
         >
           {links.map((link) => (
             <motion.li
-              className="w-full items-center justify-start border-b border-white/10 pb-4 md:flex md:justify-start md:border-b-0 md:pb-0"
+              className="w-full flex justify-start md:justify-center items-center border-b-[.3px] md:border-b-0 border-gray-500 pb-4 md:pb-0"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
-                aria-label={link.name}
-                title={link.name}
                 className={clsx(
-                  "relative flex w-full flex-row items-center justify-start gap-3 rounded-xl px-2 py-2.5 text-sm text-white/65 transition hover:bg-white/10 hover:text-white md:justify-start",
-                  { "bg-teal-300/15 text-white shadow-[inset_3px_0_0_#54d2c3]": activeSection === link.name }
+                  `flex flex-row justify-start text-md md:justify-center gap-2 items-center w-full ${
+                    theme ? "text-white" : "text-white"
+                  } hover:underline active:underline `,
+                  { "": activeSection === link.name }
                 )}
                 href={link.hash}
                 onClick={() => {
@@ -60,10 +62,8 @@ export default function Header() {
                   setCloseMenu(true);
                 }}
               >
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-lg text-teal-200 transition group-hover:border-teal-300/20 group-hover:bg-teal-300/10">
-                  {link.icon}
-                </span>
-                <span className="whitespace-nowrap opacity-100 md:opacity-0 md:transition md:group-hover:opacity-100">{link.name}</span>
+                {link.icon}
+                {link.name}
                 {link.name === activeSection && (
                   <motion.span
                     layoutId="activeSection"
@@ -82,3 +82,4 @@ export default function Header() {
     </header>
   );
 }
+

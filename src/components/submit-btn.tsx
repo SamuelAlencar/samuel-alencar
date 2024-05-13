@@ -1,6 +1,6 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
-import {useFormStatus} from "@/lib/useFormStatus";
+import {useFormStatus} from "../lib/useFormStatus";
 
 
 export default function SubmitBtn() {
@@ -9,11 +9,11 @@ export default function SubmitBtn() {
   return (
     <button
       type="submit"
-      className="group flex h-[3rem] w-[9rem] items-center justify-center gap-2 rounded-xl bg-[var(--ink)] text-white outline-none transition-all hover:-translate-y-0.5 hover:bg-[var(--accent-strong)] focus:scale-105 active:scale-100 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-[#54d2c3] dark:text-[#082326] dark:hover:bg-[#8ae8dc]"
+      className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
       disabled={pending}
     >
       {pending ? (
-        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white dark:border-[#082326]"></div>
+        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
       ) : (
         <>
           Enviar{" "}
