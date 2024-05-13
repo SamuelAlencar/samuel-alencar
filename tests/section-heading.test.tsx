@@ -1,11 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
+import React from 'react';
+import { render } from '@testing-library/react';
+import SectionHeading from '../components/section-heading';
 
-describe('Component: Section Heading', () => {
-  function sum (a: number, b: number) {
-    return a + b
-  }
-  it("should render correctly", () => {
-        expect(sum(1, 1)).toBe(2)
+describe('SectionHeading', () => {
+  it('renders without throwing an error', () => {
+    const getByText = render(<SectionHeading>Test Heading</SectionHeading>);
+    console.log(getByText)
+
   });
+
+  
 });
