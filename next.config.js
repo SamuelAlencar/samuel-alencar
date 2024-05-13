@@ -6,12 +6,11 @@ const nextConfig = {
         protocol: "https",
         hostname: "photos.app.goo.gl",
       },
-    ],
+    ]
   },
-};
-
-module.exports = {
   experimental: {
     forceSwcTransforms: true,
   },
-}
+};
+
+module.exports = nextConfig;
