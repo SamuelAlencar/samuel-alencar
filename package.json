@@ -56,7 +56,7 @@
     "typescript": "^5",
     "webpack-cli": "^5.1.4"
   },
-  "main": "index.js",
+  "main": "./src/app/page.tsx",
   "repository": "https://github.com/SamuelAlencar/samuel-alencar.git",
   "author": "samuel_alencar <samuelalencar>",
   "license": "MIT"
