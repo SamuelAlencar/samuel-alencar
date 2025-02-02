@@ -2,11 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { MdPersonSearch } from "react-icons/md";
 import { LuGraduationCap } from "react-icons/lu";
-import tokstokProjectImg from "../../public/tokstok-project.png";
-import yamahaProjectImg from "../../public/yamaha-project.png";
-import carrefourProjectImg from "../../public/carrefour-project.png";
-import salonlineProjectImg from "../../public/salonline-project.png";
-import livelobradesProjectImg from "../../public/livelobradescoseguros-project.png";
+import tokstokProjectImg from "@/../public/tokstok-project.png";
+import yamahaProjectImg from "@/../public/yamaha-project.png";
+import carrefourProjectImg from "@/../public/carrefour-project.png";
+import salonlineProjectImg from "@/../public/salonline-project.png";
+import livelobradesProjectImg from "@/../public/livelobradescoseguros-project.png";
 import {
   BsHouse,
   BsBookHalf,

@@ -7,10 +7,9 @@ import Footer from "@/components/footer";
 describe("Component: Footer", () => {
   it("should renders footer component with correct content", () => {
     const { getByText } = render(<Footer />);
-    const year = new Date().getFullYear();
     expect(
       getByText(
-        `© ${year} Samuel Alencar - Analista de Sistemas e Full Stack Developer. Todos os direitos reservados.`
+        "@2024 Samuel Alencar - Web Developer. Todos os direitos reservados."
       )
     ).toBeInTheDocument();
     expect(
