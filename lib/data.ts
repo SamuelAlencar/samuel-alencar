@@ -56,6 +56,40 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Analista de Sistemas / Frontend developer (SESC-SP)",
+    location: "São Paulo, SP",
+    description:
+      "Análise de requisitos, documentação, desenvolvimento e aprimoramento de aplicações web, resolução de bugs e reuniões técnicas com stakeholders.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024",
+    flags: [ 
+      "API's",
+      "Insomnia",
+      "Postman",
+      "Banco de Dados",
+      "MySQL",
+      "Oracle Database",
+      "Controle de versão",
+      "Git",
+      "Github",
+      "Bitbucket",
+      "Desenvolvimento Front-end",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React js",
+      "Vite",
+      "Next js",
+      "Angular Js",
+      "Angular 3",
+      "Backbone js",
+      "Gestão de backlog",
+      "CI/CD",
+      "DevOps",
+      "Azure DevOps"     
+    ],
+  },
+  {
     title: "Analista de Sistemas Ecommerce / Software Developer (Salon Line)",
     location: "Barueri, SP",
     description:
