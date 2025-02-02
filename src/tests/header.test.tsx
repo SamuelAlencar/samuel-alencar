@@ -2,9 +2,9 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-import ThemeContextProvider from "../context/theme-context";
-import ActiveSectionContextProvider from "../context/active-section-context";
-import Header from "../components/header";
+import ThemeContextProvider from "@/context/theme-context";
+import ActiveSectionContextProvider from "@/context/active-section-context";
+import Header from "@/components/header";
 
 describe("Component: Header", () => {
   describe("links", () => {

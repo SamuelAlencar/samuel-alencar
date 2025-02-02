@@ -2,8 +2,8 @@
 
 import React from "react";
 import { Resend } from "resend";
-import { validateString, getErrorMessage } from "../lib/utils";
-import ContactFormEmail from "../email/contact-form-email";
+import { validateString, getErrorMessage } from "@/lib/utils";
+import ContactFormEmail from "@/email/contact-form-email";
 
 const resend = new Resend('re_DXNUowfd_AFJakhx35PTbDKg9pXntE5wS');
 

@@ -2,10 +2,10 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-import ThemeContextProvider from "../context/theme-context";
-import ActiveSectionContextProvider from "../context/active-section-context";
-import Courses from "../components/courses";
-import { cousersData } from "../lib/data";
+import ThemeContextProvider from "@/context/theme-context";
+import ActiveSectionContextProvider from "@/context/active-section-context";
+import Courses from "@/components/courses";
+import { cousersData } from "@/lib/data";
 
 describe("Component: Courses", () => {
   it("should render correctly texts", () => {

@@ -2,10 +2,10 @@ import React from "react";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 
-import ThemeContextProvider from "../context/theme-context";
-import ActiveSectionContextProvider from "../context/active-section-context";
+import ThemeContextProvider from "@/context/theme-context";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 import Project from '../components/project';
-import { projectsData } from "../lib/data";
+import { projectsData } from "@/lib/data";
 
 describe('Component: Projects', () => {
   it("should render correctly ", () => {

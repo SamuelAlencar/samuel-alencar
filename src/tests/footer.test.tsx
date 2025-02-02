@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-import Footer from "../components/footer";
+import Footer from "@/components/footer";
 
 describe("Component: Footer", () => {
   it("should renders footer component with correct content", () => {

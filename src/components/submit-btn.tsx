@@ -1,6 +1,6 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
-import {useFormStatus} from "../lib/useFormStatus";
+import {useFormStatus} from "@/lib/useFormStatus";
 
 
 export default function SubmitBtn() {
