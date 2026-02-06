@@ -8,10 +8,9 @@ const nextConfig = {
       },
     ],
   },
-};
-
-module.exports = {
   experimental: {
     forceSwcTransforms: true,
   },
-}
+};
+
+module.exports = nextConfig;
