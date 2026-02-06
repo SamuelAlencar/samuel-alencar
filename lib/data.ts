@@ -56,6 +56,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Postgraduate Degree in Web Development",
+    location: "Campus Osasco",
+    description: "Senac São Paulo",
+    icon: React.createElement(LuGraduationCap),
+    date: "2025 - em andamento",
+    flags: [],
+  },  
+  {
     title: "Analista de Sistemas / Frontend developer (SESC-SP)",
     location: "São Paulo, SP",
     description:
