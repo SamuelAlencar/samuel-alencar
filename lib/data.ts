@@ -336,6 +336,7 @@ export const skillsData = [
   "Copilot",
   "AWS CodeWhisperer",
 ] as const;
+
 export const cousersData = [
   {
     title: "Produtividade com IA",
