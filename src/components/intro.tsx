@@ -70,7 +70,7 @@ export default function Intro() {
           duration: 0.7,
         }}
       >
-        <span>{`Olá, eu sou Samuel Alencar </> Web Developer`}</span>
+        <span>{`Olá, eu sou Samuel Alencar </> Front-end Developer`}</span>
       </motion.p>
       <motion.p
         className="mb-10  px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
