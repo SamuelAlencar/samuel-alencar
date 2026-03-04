@@ -69,7 +69,7 @@ export const experiencesData = [
     description:
       "Análise de requisitos, documentação, desenvolvimento e aprimoramento de aplicações web, resolução de bugs e reuniões técnicas com stakeholders.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024",
+    date: "2024 - 2025",
     flags: [ 
       "API's",
       "Insomnia",

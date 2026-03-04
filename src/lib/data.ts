@@ -56,12 +56,20 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Postgraduate Degree in Web Development",
+    location: "EAD",
+    description: "SENAC SP",
+    icon: React.createElement(LuGraduationCap),
+    date: "2025 - em andamento",
+    flags: [],
+  }, 
+  {
     title: "Analista de Sistemas / Frontend developer (SESC-SP)",
     location: "São Paulo, SP",
     description:
       "Análise de requisitos, documentação, desenvolvimento e aprimoramento de aplicações web, resolução de bugs e reuniões técnicas com stakeholders.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024",
+    date: "2024 - 2025",
     flags: [ 
       "API's",
       "Insomnia",
