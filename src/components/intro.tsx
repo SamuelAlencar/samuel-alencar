@@ -22,7 +22,7 @@ export default function Intro() {
     >
       <p className="eyebrow mb-4">Sistemas • Produtos digitais • E-commerce</p>
       <motion.p
-        className="mb-5 px-4 text-4xl font-semibold leading-[1.08] tracking-[-0.04em] text-gradient sm:text-6xl"
+        className="mx-auto mb-5 max-w-3xl px-2 text-3xl font-semibold leading-tight text-gradient sm:px-4 sm:text-6xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -37,7 +37,7 @@ export default function Intro() {
         <span className="text-[0.7em] text-[var(--ink)]">Analista de Sistemas | Full Stack Developer</span>
       </motion.p>
       <motion.p
-        className="mx-auto mb-10 max-w-2xl px-4 text-lg font-light leading-relaxed text-[var(--muted)] sm:text-xl"
+        className="mx-auto mb-10 max-w-2xl px-3 text-base font-light leading-7 text-[var(--muted)] sm:px-4 sm:text-xl sm:leading-relaxed"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -47,13 +47,13 @@ export default function Intro() {
           duration: 0.7,
         }}
       >
-        <span className="text-xl font-light italic">
+        <span className="text-base font-light italic sm:text-xl">
           "Transformo desafios de negócio em experiências digitais escaláveis, com arquitetura sólida e foco no usuário."
         </span>
       </motion.p>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col items-center justify-center gap-3 px-4 text-base font-medium sm:flex-row sm:gap-2 sm:text-lg"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -62,7 +62,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group flex items-center gap-2 rounded-full bg-[var(--ink)] px-7 py-3 text-white shadow-lg shadow-teal-950/10 outline-none transition hover:-translate-y-0.5 hover:bg-[var(--accent-strong)] focus:scale-105 active:scale-100 dark:bg-[#54d2c3] dark:text-[#082326] dark:hover:bg-[#8ae8dc]"
+          className="group flex w-full max-w-xs items-center justify-center gap-2 rounded-full bg-[var(--ink)] px-6 py-3 text-white shadow-lg shadow-teal-950/10 outline-none transition hover:-translate-y-0.5 hover:bg-[var(--accent-strong)] focus:scale-105 active:scale-100 sm:w-auto sm:px-7 dark:bg-[#54d2c3] dark:text-[#082326] dark:hover:bg-[#8ae8dc]"
           onClick={() => {
             setActiveSection("Contato");
             setTimeOfLastClick(Date.now());
@@ -73,7 +73,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group flex cursor-pointer items-center gap-2 rounded-full border border-[var(--line-color)] bg-white/70 px-7 py-3 outline-none transition hover:-translate-y-0.5 hover:border-[var(--accent)] hover:bg-white focus:scale-105 active:scale-100 dark:bg-white/10 dark:hover:bg-white/15"
+          className="group flex w-full max-w-xs cursor-pointer items-center justify-center gap-2 rounded-full border border-[var(--line-color)] bg-white/70 px-6 py-3 outline-none transition hover:-translate-y-0.5 hover:border-[var(--accent)] hover:bg-white focus:scale-105 active:scale-100 sm:w-auto sm:px-7 dark:bg-white/10 dark:hover:bg-white/15"
           href="/CV.pdf"
           download="CV.pdf"
         >

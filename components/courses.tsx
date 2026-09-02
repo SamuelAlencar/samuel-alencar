@@ -33,10 +33,11 @@ export default function Courses() {
       className="mb-28 w-full scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>Cursos / Certificações</SectionHeading>
-      <ul className="flex flex-wrap flex-col md:flex-row justify-center">
+      <p className="mb-5 text-xs text-[var(--muted)] sm:hidden">Deslize para explorar os cursos</p>
+      <ul className="courses-carousel flex snap-x snap-mandatory flex-nowrap justify-start gap-4 overflow-x-auto pb-5 sm:flex-wrap sm:justify-center sm:gap-0 sm:overflow-visible sm:pb-0">
         {cousersData.map((course, index) => (
           <motion.li
-            className="w-full md:w-[27rem] p-5"
+            className="w-[86vw] shrink-0 snap-center p-3 sm:w-[27rem] sm:p-5"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"

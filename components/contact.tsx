@@ -31,7 +31,7 @@ export default function Contact() {
     >
       <SectionHeading>Vamos conversar</SectionHeading>
 
-      <p className="-mt-6 text-[var(--muted)] dark:text-white/80">
+      <p className="mx-auto -mt-2 max-w-2xl px-2 text-base leading-7 text-[var(--muted)] sm:-mt-6 sm:text-lg sm:leading-8 dark:text-white/80">
       Tem um projeto, oportunidade ou desafio em tecnologia? Fale comigo pelo e-mail{" "}
         <a className="underline" href="mailto:samuel.d.alencar@gmail.com">
           samuel.d.alencar@gmail.com
@@ -40,7 +40,7 @@ export default function Contact() {
       </p>
 
       <form
-        className="glass-surface mt-8 flex flex-col rounded-3xl p-5 text-left sm:p-7 dark:text-black"
+        className="glass-surface mx-auto mt-6 flex w-full max-w-2xl flex-col rounded-3xl p-4 text-left sm:mt-8 sm:p-7 dark:text-black"
         name="senderEmail"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);

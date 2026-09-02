@@ -24,8 +24,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="pt-BR">
       <body className="relative overflow-x-hidden text-gray-950 dark:text-gray-50 md:pl-24">
         <AmbientEffects />
-        <div className="pointer-events-none absolute -top-40 right-[-12rem] -z-10 h-[32rem] w-[32rem] rounded-full bg-teal-300/20 blur-[9rem] dark:bg-teal-500/10" />
-        <div className="pointer-events-none absolute top-[34rem] left-[-18rem] -z-10 h-[28rem] w-[28rem] rounded-full bg-cyan-200/20 blur-[8rem] dark:bg-cyan-700/10" />
+        <div className="pointer-events-none fixed -top-40 right-[-12rem] -z-10 h-[32rem] w-[32rem] rounded-full bg-teal-300/20 blur-[9rem] dark:bg-teal-500/10" />
+        <div className="pointer-events-none fixed top-[34rem] left-[-18rem] -z-10 h-[28rem] w-[28rem] rounded-full bg-cyan-200/20 blur-[8rem] dark:bg-cyan-700/10" />
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>

@@ -45,7 +45,7 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mx-auto mb-5 w-full last:mb-0 sm:mb-8 sm:w-[70%]"
+      className="group mx-auto mb-5 w-[86vw] shrink-0 snap-center last:mb-0 sm:mb-8 sm:w-[70%]"
     >
       <section onPointerMove={handlePointerMove} onPointerLeave={resetTilt} className="project-card relative w-full overflow-hidden rounded-3xl border border-[var(--line-color)] bg-white/70 transition duration-300 hover:border-[var(--accent)] hover:shadow-[var(--shadow-soft)] sm:h-[21rem] sm:pr-8 sm:group-even:pl-8 dark:bg-white/5">
         <div className="flex h-full flex-col px-6 pb-7 pt-6 sm:max-w-[60%] sm:pl-10 sm:pr-2 sm:pt-9 sm:group-even:ml-[18rem]">
