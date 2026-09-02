@@ -25,28 +25,27 @@ export default function About() {
         Sobre
       </SectionHeading>
       <p className="pb-4 items-start font-extralight">
-        Sou um profissional de Tecnologia da Informação com experiência
-        consolidada como Analista de Sistemas E-commerce e Desenvolvedor
-        Front-End.
+        Sou Analista de Sistemas e Desenvolvedor Front-end Sênior, com
+        experiência consolidada em e-commerce, integrações e aplicações web
+        escaláveis.
       </p>
       <p className="pb-4 align-left font-extralight">
-        Ao longo da minha trajetória, destaco minha habilidade em liderança
-        técnica, desenvolvimento de aplicações web e integrações de sistemas.
-        Minha especialização abrange tecnologias como React.js, Node.js, e
-        frameworks associados.
+        Ao longo da minha trajetória, atuo com levantamento de requisitos,
+        liderança técnica, arquitetura front-end e desenvolvimento de soluções
+        orientadas ao negócio, usando React.js, Next.js, Angular, Node.js e Java.
       </p>
       <p className="pb-4 align-left font-extralight">
-        Possuo competências comprovadas em metodologias ágeis, controle de
-        versão e gestão eficiente de backlog.{" "}
+        Também trabalho com Azure DevOps, Oracle Commerce Cloud, VTEX IO, IBM
+        WebSphere e Oracle Integration Cloud, sempre em colaboração com times
+        multidisciplinares.
       </p>
       <p className="pb-4 align-left font-extralight">
-        Meu histórico em empresas líderes do setor reflete minha expertise em
-        resolução de problemas, arquitetura front-end e implementação de
-        soluções inovadoras.{" "}
+        Em 2026, concluí minha pós-graduação em Desenvolvimento Web pelo SENAC
+        SP, reforçando meu compromisso com aprendizado contínuo.
       </p>
       <p className="pb-4 align-left font-extralight">
-        Estou em busca de desafios em um ambiente dinâmico, onde eu possa
-        aplicar e ampliar minhas habilidades.
+        Busco desafios em ambientes dinâmicos, nos quais eu possa transformar
+        requisitos complexos em produtos digitais de qualidade.
       </p>
 
     </motion.section>

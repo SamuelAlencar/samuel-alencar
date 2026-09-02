@@ -15,8 +15,10 @@ describe('Component: Intro', () => {
         </ActiveSectionContextProvider>
       </ThemeContextProvider>
     );
-    const greetingElement = screen.getByText(/Olá, eu sou Samuel Alencar <\/> Web Developer/i);
-    expect(greetingElement).toBeInTheDocument();
+    expect(screen.getByText(/Olá, eu sou Samuel Alencar/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Analista de Sistemas e Desenvolvedor Front-end Sênior/i)
+    ).toBeInTheDocument();
   });
 
   it("should open links correctly", () => {

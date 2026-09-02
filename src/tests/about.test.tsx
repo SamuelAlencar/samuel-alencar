@@ -19,7 +19,7 @@ describe("Component: About", () => {
     const aboutElement = screen.getByText("Sobre");
     expect(aboutElement).toBeInTheDocument();
 
-    const paragraphs = screen.getAllByRole('paragraph');
+    const paragraphs = screen.getAllByText(/./, { selector: "p" });
     expect(paragraphs.length).toBeGreaterThan(0);
 
   });

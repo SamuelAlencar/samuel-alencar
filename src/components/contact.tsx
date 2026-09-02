@@ -32,11 +32,11 @@ export default function Contact() {
       <SectionHeading>Fale comigo</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-      Por favor contacte-me diretamente em{" "}
+        Você pode falar comigo diretamente pelo e-mail{" "}
         <a className="underline" href="mailto:samuel.d.alencar@gmail.com">
           samuel.d.alencar@gmail.com
         </a>{" "}
-        ou através deste formulário.
+        ou usar o formulário abaixo.
       </p>
 
       <form

@@ -22,34 +22,27 @@ export default function About() {
       }}
       id="about"
     >
-      <SectionHeading>
-        Sobre
-      </SectionHeading>
-      <p className="pb-4 items-start font-extralight">
-        Sou um profissional de Tecnologia da Informação com experiência
-        consolidada como Analista de Sistemas E-commerce e Desenvolvedor
-        Front-End.
+      <SectionHeading>Sobre</SectionHeading>
+      <p className="pb-4 font-extralight">
+        Sou um Analista de Sistemas e Desenvolvedor Front-end Sênior com
+        trajetória consolidada em e-commerce, integrações entre sistemas e
+        aplicações web escaláveis.
       </p>
-      <p className="pb-4 align-left font-extralight">
-        Ao longo da minha trajetória, destaco minha habilidade em liderança
-        técnica, desenvolvimento de aplicações web e integrações de sistemas.
-        Minha especialização abrange tecnologias como React.js, Node.js, e
-        frameworks associados.
+      <p className="pb-4 font-extralight">
+        Atuo com levantamento e documentação de requisitos, arquitetura
+        front-end, desenvolvimento de funcionalidades, sustentação de
+        plataformas e colaboração próxima com times multidisciplinares.
       </p>
-      <p className="pb-4 align-left font-extralight">
-        Possuo competências comprovadas em metodologias ágeis, controle de
-        versão e gestão eficiente de backlog.{" "}
+      <p className="pb-4 font-extralight">
+        Minha experiência inclui React.js, Next.js, Angular, Node.js, Java,
+        Azure DevOps e plataformas como Oracle Commerce Cloud, VTEX IO, IBM
+        WebSphere e Oracle Integration Cloud.
       </p>
-      <p className="pb-4 align-left font-extralight">
-        Meu histórico em empresas líderes do setor reflete minha expertise em
-        resolução de problemas, arquitetura front-end e implementação de
-        soluções inovadoras.{" "}
+      <p className="pb-4 font-extralight">
+        Também mantenho evolução contínua com pós-graduação em Desenvolvimento
+        Web e cursos recentes em Node.js, Next.js, React e produtividade com
+        IA.
       </p>
-      <p className="pb-4 align-left font-extralight">
-        Estou em busca de desafios em um ambiente dinâmico, onde eu possa
-        aplicar e ampliar minhas habilidades.
-      </p>
-
     </motion.section>
   );
 }

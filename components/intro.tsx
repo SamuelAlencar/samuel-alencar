@@ -70,7 +70,9 @@ export default function Intro() {
           duration: 0.7,
         }}
       >
-        <span>{`Olá, eu sou Samuel Alencar </> Web Developer`}</span>
+        <span>Olá, eu sou Samuel Alencar</span>
+        <br />
+        <span>Analista de Sistemas e Desenvolvedor Front-end Sênior</span>
       </motion.p>
       <motion.p
         className="mb-10  px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
@@ -84,7 +86,7 @@ export default function Intro() {
         }}
       >
         <span className="text-xl font-light italic">
-        “Transformando ideias complexas em experiências digitais simples e elegantes, pixel por pixel.”
+        "Transformando requisitos complexos em produtos web escaláveis, com foco em arquitetura, performance e colaboração."
         </span>
       </motion.p>
 
@@ -104,16 +106,16 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Entre e contato{" "}
+          Entre em contato{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
-          download
+          href="/Curriculo_Samuel_Alencar_Atualizado.docx"
+          download="Curriculo_Samuel_Alencar_Atualizado.docx"
         >
-          Download CV{" "}
+          Baixar currículo{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 

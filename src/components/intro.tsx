@@ -70,7 +70,9 @@ export default function Intro() {
           duration: 0.7,
         }}
       >
-        <span>{`Olá, eu sou Samuel Alencar </> Front-end Developer`}</span>
+        <span>{`Olá, eu sou Samuel Alencar`}</span>
+        <br />
+        <span>Analista de Sistemas e Desenvolvedor Front-end Sênior</span>
       </motion.p>
       <motion.p
         className="mb-10  px-4 text-2xl font-medium !leading-[1.5] sm:text-1xl"
@@ -84,7 +86,8 @@ export default function Intro() {
         }}
       >
         <span className="text-xl font-light italic">
-        “Transformando ideias complexas em experiências digitais simples e elegantes, pixel por pixel.”
+          "Transformando requisitos complexos em produtos web escaláveis, com
+          foco em arquitetura, performance e colaboração."
         </span>
       </motion.p>
 
@@ -104,16 +107,16 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Entre e contato{" "}
+          Entre em contato{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
-          download
+          href="/Curriculo_Samuel_Alencar_Atualizado.docx"
+          download="Curriculo_Samuel_Alencar_Atualizado.docx"
         >
-          Download CV{" "}
+          Baixar currículo{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
@@ -122,6 +125,7 @@ export default function Intro() {
             className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/samuel-nascimento-alencar/"
             target="_blank"
+            rel="noreferrer"
           >
             <BsLinkedin />
           </a>
@@ -130,6 +134,7 @@ export default function Intro() {
             className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://github.com/SamuelAlencar"
             target="_blank"
+            rel="noreferrer"
           >
             <FaGithubSquare />
           </a>
@@ -137,6 +142,7 @@ export default function Intro() {
             className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://api.whatsapp.com/send?phone=5511952424064"
             target="_blank"
+            rel="noreferrer"
           >
             <FaWhatsapp />
           </a>
