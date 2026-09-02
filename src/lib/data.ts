@@ -56,7 +56,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Desenvolvedor Fullstack | CAOA Chery",
+    title: "Full Stack Developer | CAOA Chery",
     location: "São Paulo, SP",
     description:
       "Atuação de ponta a ponta no levantamento, análise e documentação de requisitos para novas aplicações web. Desenvolvimento, evolução e sustentação de soluções que apoiam o atendimento ao cliente e a gestão do negócio, com foco em qualidade, estabilidade e melhoria contínua. Condução de análises de falhas, correção de bugs, otimização de sistemas e alinhamentos técnicos com stakeholders e parceiros.",
@@ -226,44 +226,44 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "SESC APP",
-    description:
-      "Aplicação mobile voltada à experiência digital do SESC, com foco em acesso a serviços, conteúdo e jornadas para o público.",
-    tags: ["React Native", "Android", "iOS", "Node.js", "Azure DevOps"],
-    imageUrl: null,
-    linkUrl: "#projects",
-  },
-  {
-    title: "Site Bilheteria",
-    description:
-      "Plataforma web para consulta e compra de ingressos, com foco em usabilidade, clareza da jornada e integração com os serviços do SESC.",
-    tags: ["React.js", "Next.js", "JavaScript", "Java", "Azure DevOps"],
-    imageUrl: null,
-    linkUrl: "#projects",
-  },
-  {
     title: "CAOA Dashboards",
     description:
       "Dashboards operacionais para acompanhamento de informações e apoio à tomada de decisão no negócio automotivo.",
     tags: ["React", "Next.js", "Node.js", "SQL Server", "Azure DevOps"],
-    imageUrl: null,
-    linkUrl: "#projects",
+    imageUrl: "/em-breve-projeto.svg",
+    linkUrl: "https://salonline.com.br/",
   },
   {
     title: "CAOA Sites Operacionais",
     description:
       "Sites e aplicações operacionais para apoiar processos internos, atendimento ao cliente e evolução da operação.",
     tags: ["React", "Next.js", "Node.js", "Azure DevOps"],
-    imageUrl: null,
-    linkUrl: "#projects",
+    imageUrl: "/em-breve-projeto.svg",
+    linkUrl: "https://salonline.com.br/",
   },
   {
     title: "CAOA Agentes de IA",
     description:
       "Iniciativas com agentes de inteligência artificial para ampliar a eficiência operacional e apoiar novos fluxos de atendimento.",
     tags: ["Agentes de IA", "Node.js", "React", "Integrações", "Azure DevOps"],
-    imageUrl: null,
-    linkUrl: "#projects",
+    imageUrl: "/em-breve-projeto.svg",
+    linkUrl: "https://salonline.com.br/",
+  },
+  {
+    title: "SESC SP APP",
+    description:
+      "Aplicação mobile voltada à experiência digital do SESCSP, com foco em acesso a serviços, conteúdo e jornadas para o público.",
+    tags: ["React Native", "Android", "iOS", "Node.js", "Azure DevOps"],
+    imageUrl: "/em-breve-projeto.svg",
+    linkUrl: "https://salonline.com.br/",
+  },
+  {
+    title: "Site Bilheteria",
+    description:
+      "Plataforma web para consulta e compra de ingressos, com foco em usabilidade, clareza da jornada e integração com os serviços do SESC SP.",
+    tags: ["React.js", "Next.js", "JavaScript", "Java", "Azure DevOps"],
+    imageUrl: "/em-breve-projeto.svg",
+    linkUrl: "https://salonline.com.br/",
   },
   {
     title: "Salon Line",

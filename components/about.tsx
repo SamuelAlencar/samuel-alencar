@@ -25,7 +25,7 @@ export default function About() {
         Sobre
       </SectionHeading>
       <p className="glass-surface rounded-3xl p-6 text-lg leading-8 text-[var(--muted)] sm:p-9 sm:text-xl">
-        Sou Analista de Sistemas e Desenvolvedor Front-end Sênior, com mais de
+        Sou Analista de Sistemas e Full Stack Developer, com mais de
         15 anos de experiência em tecnologia e atuação sólida em e-commerce,
         integrações e aplicações web escaláveis.
       </p>

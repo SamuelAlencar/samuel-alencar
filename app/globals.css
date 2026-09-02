@@ -90,8 +90,7 @@ body:has(button:hover) .cursor-ring {
 
 main,
 header,
-footer,
-body > div:not(.ambient-effects) {
+footer {
   position: relative;
   z-index: 1;
 }

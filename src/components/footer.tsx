@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="mb-10 mt-8 border-t border-[var(--line-color)] px-4 pt-8 text-center text-[var(--muted)]" role="footer">
       <small className="mb-2 block text-xs">
-        © {year} Samuel Alencar - Analista de Sistemas e Front-end Sênior.
+        © {year} Samuel Alencar - Analista de Sistemas e Full Stack Developer.
         Todos os direitos reservados.
       </small>
       <p className="text-xs">

@@ -45,11 +45,10 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-5 w-full last:mb-0 sm:mb-8"
+      className="group mx-auto mb-5 w-full last:mb-0 sm:mb-8 sm:w-[70%]"
     >
       <section onPointerMove={handlePointerMove} onPointerLeave={resetTilt} className="project-card relative w-full overflow-hidden rounded-3xl border border-[var(--line-color)] bg-white/70 transition duration-300 hover:border-[var(--accent)] hover:shadow-[var(--shadow-soft)] sm:h-[21rem] sm:pr-8 sm:group-even:pl-8 dark:bg-white/5">
         <div className="flex h-full flex-col px-6 pb-7 pt-6 sm:max-w-[60%] sm:pl-10 sm:pr-2 sm:pt-9 sm:group-even:ml-[18rem]">
-          <p className="eyebrow mb-2">Projeto em destaque</p>
           <h3 className="text-2xl font-semibold tracking-tight text-[var(--ink)] sm:text-3xl">{title}</h3>
           <p className="line-mt-2 pb-2 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
             {description}
@@ -75,6 +74,8 @@ export default function Project({
           <Image
             src={imageUrl}
             alt={`Prévia do projeto ${title}`}
+            width={1344}
+            height={367}
             quality={95}
             className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 

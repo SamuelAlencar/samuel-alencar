@@ -21,7 +21,7 @@ export default function Header() {
     <header className="relative z-[999]">
       <nav className="group fixed left-1/2 top-3 w-[calc(100%-1.5rem)] -translate-x-1/2 rounded-2xl border border-white/20 bg-[#0b2023]/90 shadow-2xl shadow-teal-950/20 backdrop-blur-xl transition-all duration-300 md:left-5 md:top-1/2 md:w-[4.75rem] md:-translate-y-1/2 md:translate-x-0 md:rounded-[1.75rem] md:hover:w-56">
         <div className="hidden items-center gap-3 border-b border-white/10 px-4 py-5 md:flex">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-teal-300 to-cyan-500 text-sm font-black text-[#092023] shadow-lg shadow-teal-400/20">SA</span>
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-teal-300 to-cyan-500 text-sm font-black text-[#092023] shadow-lg shadow-teal-400/20">SA</span>
           <span className="whitespace-nowrap text-xs font-semibold tracking-[0.18em] text-white/80 opacity-0 transition group-hover:opacity-100">COMMAND DECK</span>
         </div>
         <span

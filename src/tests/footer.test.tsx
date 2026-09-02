@@ -10,7 +10,7 @@ describe("Component: Footer", () => {
     const year = new Date().getFullYear();
     expect(
       getByText(
-        `© ${year} Samuel Alencar - Analista de Sistemas e Front-end Sênior. Todos os direitos reservados.`
+        `© ${year} Samuel Alencar - Analista de Sistemas e Full Stack Developer. Todos os direitos reservados.`
       )
     ).toBeInTheDocument();
     expect(
