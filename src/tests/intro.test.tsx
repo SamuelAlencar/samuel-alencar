@@ -17,7 +17,7 @@ describe('Component: Intro', () => {
     );
     expect(screen.getByText(/Olá, eu sou Samuel Alencar/i)).toBeInTheDocument();
     expect(
-      screen.getByText(/Analista de Sistemas e Desenvolvedor Front-end Sênior/i)
+      screen.getByText(/Analista de Sistemas \| Desenvolvedor Front-end Sênior/i)
     ).toBeInTheDocument();
   });
 

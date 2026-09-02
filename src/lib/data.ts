@@ -59,7 +59,7 @@ export const experiencesData = [
     title: "Desenvolvedor Fullstack | CAOA Chery",
     location: "São Paulo, SP",
     description:
-      "Levantamento, análise e documentação de requisitos funcionais e não funcionais para novas aplicações web. Desenvolvimento, evolução e sustentação de soluções voltadas ao atendimento ao cliente e à gestão do negócio, com atuação em análise de falhas, correção de bugs, otimização de sistemas e condução de reuniões técnicas com stakeholders e parceiros.",
+      "Atuação de ponta a ponta no levantamento, análise e documentação de requisitos para novas aplicações web. Desenvolvimento, evolução e sustentação de soluções que apoiam o atendimento ao cliente e a gestão do negócio, com foco em qualidade, estabilidade e melhoria contínua. Condução de análises de falhas, correção de bugs, otimização de sistemas e alinhamentos técnicos com stakeholders e parceiros.",
     icon: React.createElement(CgWorkAlt),
     date: "Abr/2026 - Atualmente",
     flags: [
@@ -85,7 +85,7 @@ export const experiencesData = [
     title: "Analista de Sistemas | SESC SP",
     location: "São Paulo, SP",
     description:
-      "Levantamento, análise e documentação de requisitos, desenvolvimento e sustentação de aplicações web, correção de bugs, otimização de sistemas e condução de reuniões técnicas com stakeholders e parceiros.",
+      "Responsável pelo levantamento, análise e documentação de requisitos funcionais e não funcionais, além do desenvolvimento, evolução e sustentação de aplicações web. Atuação na resolução de incidentes, correção de bugs, otimização de sistemas e condução de reuniões técnicas com stakeholders e parceiros.",
     icon: React.createElement(CgWorkAlt),
     date: "Jul/2024 - Dez/2025",
     flags: [
@@ -109,7 +109,7 @@ export const experiencesData = [
     title: "Analista de Sistemas Sênior | Salon Line",
     location: "Barueri, SP",
     description:
-      "Atuação no desenho de arquitetura front-end, levantamento de requisitos, desenvolvimento de funcionalidades, hotsites, landing pages e aplicações web para Oracle Commerce Cloud e WordPress, além de integrações com ERP, CRM e TMS, testes e suporte ao go-live.",
+      "Atuação no desenho de arquiteturas front-end e no desenvolvimento de funcionalidades, hotsites, landing pages e aplicações web para Oracle Commerce Cloud e WordPress. Liderança técnica em integrações entre e-commerce, ERP, CRM e TMS, com uso de Oracle Integration Cloud e Digibee, além de testes, documentação e suporte ao go-live.",
     icon: React.createElement(CgWorkAlt),
     date: "Jan/2023 - Nov/2023",
     flags: [
@@ -138,7 +138,7 @@ export const experiencesData = [
     title: "Analista de Sistemas E-commerce Sênior | Carrefour",
     location: "São Paulo, SP",
     description:
-      "Desenvolvimento e manutenção do e-commerce VTEX IO e do portal BackOffice, com definição de arquitetura front-end, code review, apoio às cerimônias ágeis e resolução de incidentes por análise de causa raiz.",
+      "Desenvolvimento e sustentação do e-commerce VTEX IO e do portal BackOffice, com definição e padronização de arquiteturas front-end. Atuação em code reviews, cerimônias ágeis e resolução de incidentes por análise de causa raiz, contribuindo para a qualidade e a continuidade da operação.",
     icon: React.createElement(CgWorkAlt),
     date: "Ago/2021 - Jan/2023",
     flags: [
@@ -160,7 +160,7 @@ export const experiencesData = [
     title: "Desenvolvedor Front-end Sênior | Compass.UOL",
     location: "São Paulo, SP",
     description:
-      "Levantamento de requisitos, desenvolvimento de funcionalidades para Oracle Commerce Cloud e WordPress, definição de padrões de código, code reviews, documentação técnica e participação em cerimônias ágeis com foco em Scrum.",
+      "Levantamento de requisitos e desenvolvimento de funcionalidades para Oracle Commerce Cloud e WordPress. Definição de padrões de código, realização de code reviews, produção de documentação técnica e participação ativa em cerimônias ágeis orientadas por Scrum.",
     icon: React.createElement(CgWorkAlt),
     date: "Dez/2019 - Ago/2021",
     flags: [
@@ -180,7 +180,7 @@ export const experiencesData = [
     title: "Desenvolvedor Front-end Pleno | Tok&Stok E-commerce",
     location: "Barueri, SP",
     description:
-      "Desenvolvimento e manutenção de funcionalidades para e-commerce e site institucional, sustentação de aplicações, análise e resolução de bugs, code review, levantamento de requisitos e criação de novos componentes para IBM WebSphere e VTEX.",
+      "Desenvolvimento e sustentação de funcionalidades para e-commerce e site institucional, com análise e resolução de bugs, code reviews e participação no levantamento de requisitos. Criação de componentes e evolução de soluções para IBM WebSphere Commerce e VTEX.",
     icon: React.createElement(CgWorkAlt),
     date: "Jan/2012 - Nov/2019",
     flags: [
@@ -199,7 +199,7 @@ export const experiencesData = [
     title: "Assistente de Marketing Sr. | Tok&Stok",
     location: "Barueri, SP",
     description:
-      "Produção de fotos still, edição e tratamento de imagens, organização do banco de imagens, cadastro e manutenção de produtos no site, criação de comunicados digitais e atualização da intranet corporativa.",
+      "Experiência que consolidou a visão de negócio e de experiência digital: produção e tratamento de imagens, organização do acervo, cadastro de produtos no site, criação de comunicados digitais e manutenção da intranet corporativa.",
     icon: React.createElement(CgWorkAlt),
     date: "Dez/2006 - Dez/2011",
     flags: [
@@ -226,9 +226,49 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "SESC APP",
+    description:
+      "Aplicação mobile voltada à experiência digital do SESC, com foco em acesso a serviços, conteúdo e jornadas para o público.",
+    tags: ["React Native", "Android", "iOS", "Node.js", "Azure DevOps"],
+    imageUrl: null,
+    linkUrl: "#projects",
+  },
+  {
+    title: "Site Bilheteria",
+    description:
+      "Plataforma web para consulta e compra de ingressos, com foco em usabilidade, clareza da jornada e integração com os serviços do SESC.",
+    tags: ["React.js", "Next.js", "JavaScript", "Java", "Azure DevOps"],
+    imageUrl: null,
+    linkUrl: "#projects",
+  },
+  {
+    title: "CAOA Dashboards",
+    description:
+      "Dashboards operacionais para acompanhamento de informações e apoio à tomada de decisão no negócio automotivo.",
+    tags: ["React", "Next.js", "Node.js", "SQL Server", "Azure DevOps"],
+    imageUrl: null,
+    linkUrl: "#projects",
+  },
+  {
+    title: "CAOA Sites Operacionais",
+    description:
+      "Sites e aplicações operacionais para apoiar processos internos, atendimento ao cliente e evolução da operação.",
+    tags: ["React", "Next.js", "Node.js", "Azure DevOps"],
+    imageUrl: null,
+    linkUrl: "#projects",
+  },
+  {
+    title: "CAOA Agentes de IA",
+    description:
+      "Iniciativas com agentes de inteligência artificial para ampliar a eficiência operacional e apoiar novos fluxos de atendimento.",
+    tags: ["Agentes de IA", "Node.js", "React", "Integrações", "Azure DevOps"],
+    imageUrl: null,
+    linkUrl: "#projects",
+  },
+  {
     title: "Salon Line",
     description:
-      "Atuação no desenvolvimento e sustentação do e-commerce, com features, hotsites, landing pages, integrações e suporte ao go-live.",
+      "Desenvolvimento e sustentação do e-commerce, combinando novas funcionalidades, hotsites, landing pages e integrações entre plataformas. Participação na preparação técnica e no suporte ao go-live.",
     tags: [
       "Oracle Commerce Cloud",
       "React.js",
@@ -243,7 +283,7 @@ export const projectsData = [
   {
     title: "Carrefour",
     description:
-      "Responsável pelo e-commerce VTEX IO e pelo portal BackOffice, com foco em arquitetura front-end, manutenção, code review e resolução de incidentes.",
+      "Evolução do e-commerce VTEX IO e do portal BackOffice, com foco em arquitetura front-end, manutenção sustentável, code reviews e investigação de incidentes.",
     tags: [
       "VTEX IO",
       "React.js",
@@ -258,7 +298,7 @@ export const projectsData = [
   {
     title: "Yamaha Motor",
     description:
-      "Evolução do e-commerce com carrossel 360°, simulação de financiamento em tempo real e landing pages animadas.",
+      "Evolução da jornada digital do e-commerce com carrossel 360°, simulação de financiamento em tempo real e landing pages com experiências interativas.",
     tags: ["Oracle Commerce Cloud", "Knockout.js", "jQuery", "Bootstrap", "Responsive"],
     imageUrl: yamahaProjectImg,
     linkUrl: "https://www.yamaha-motor.com.br/",
@@ -266,7 +306,7 @@ export const projectsData = [
   {
     title: "Livelo",
     description:
-      "Desenvolvimento de features e integrações de alta complexidade, com foco em manutenção e evolução da jornada do usuário.",
+      "Desenvolvimento de funcionalidades e integrações de alta complexidade, com foco em estabilidade, manutenção e evolução da jornada do usuário.",
     tags: ["Oracle Commerce Cloud", "Knockout.js", "jQuery", "Responsive"],
     imageUrl: livelobradesProjectImg,
     linkUrl: "https://www.livelo.com.br/",
@@ -274,7 +314,7 @@ export const projectsData = [
   {
     title: "Tok&Stok E-commerce",
     description:
-      "Atuação em múltiplas versões do e-commerce, com desenvolvimento front-end, sustentação, componentes legados e evolução da plataforma.",
+      "Atuação em múltiplas versões do e-commerce, unindo desenvolvimento front-end, sustentação de componentes legados e evolução contínua da plataforma.",
     tags: [
       "HTML",
       "CSS",

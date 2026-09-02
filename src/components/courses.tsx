@@ -30,7 +30,7 @@ export default function Courses() {
     <section
       id="courses"
       ref={ref}
-      className="mb-28 w-full md:w-[60rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 w-full scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>Cursos / Certificações</SectionHeading>
       <ul className="flex flex-wrap flex-col md:flex-row justify-center">
@@ -46,8 +46,8 @@ export default function Courses() {
             }}
             custom={index}
           >
-            <div className="flex flex-col justify-start bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80">
-              <h3 className="font-semibold text-lg">{course.title}</h3>
+            <div className="flex flex-col justify-start rounded-2xl border border-[var(--line-color)] bg-white/65 px-5 py-4 text-left transition hover:-translate-y-1 hover:border-[var(--accent)] hover:shadow-[var(--shadow-soft)] dark:bg-white/5 dark:text-white/80">
+              <h3 className="text-lg font-semibold tracking-tight text-[var(--ink)]">{course.title}</h3>
               <p className="text-sm font-extralight flex flex-row items-center justify-start gap-2 py-1">
                 <LiaUniversitySolid size={20} />
                 <b>Instituição:</b> {course.institution}

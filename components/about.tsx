@@ -10,7 +10,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 mt-28 max-w-[45rem] leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 mt-28 w-full scroll-mt-28 sm:mb-40"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -24,28 +24,32 @@ export default function About() {
       <SectionHeading>
         Sobre
       </SectionHeading>
-      <p className="pb-4 items-start font-extralight">
-        Sou Analista de Sistemas e Desenvolvedor Front-end Sênior, com
-        experiência consolidada em e-commerce, integrações e aplicações web
-        escaláveis.
+      <p className="glass-surface rounded-3xl p-6 text-lg leading-8 text-[var(--muted)] sm:p-9 sm:text-xl">
+        Sou Analista de Sistemas e Desenvolvedor Front-end Sênior, com mais de
+        15 anos de experiência em tecnologia e atuação sólida em e-commerce,
+        integrações e aplicações web escaláveis.
       </p>
-      <p className="pb-4 align-left font-extralight">
-        Ao longo da minha trajetória, atuo com levantamento de requisitos,
-        liderança técnica, arquitetura front-end e desenvolvimento de soluções
-        orientadas ao negócio, usando React.js, Next.js, Angular, Node.js e Java.
+      <p className="mt-4 leading-8 text-[var(--muted)] sm:text-lg">
+        Minha trajetória combina visão de negócio e profundidade técnica: atuo
+        no levantamento de requisitos, na liderança técnica, na definição de
+        arquiteturas front-end e no desenvolvimento de soluções com React.js,
+        Next.js, Angular, Node.js e Java.
       </p>
-      <p className="pb-4 align-left font-extralight">
-        Também trabalho com Azure DevOps, Oracle Commerce Cloud, VTEX IO, IBM
-        WebSphere e Oracle Integration Cloud, sempre em colaboração com times
-        multidisciplinares.
+      <p className="mt-4 leading-8 text-[var(--muted)] sm:text-lg">
+        Tenho experiência com Azure DevOps, Oracle Commerce Cloud, VTEX IO, IBM
+        WebSphere e Oracle Integration Cloud, colaborando com times
+        multidisciplinares para transformar necessidades complexas em entregas
+        consistentes.
       </p>
-      <p className="pb-4 align-left font-extralight">
-        Em 2026, concluí minha pós-graduação em Desenvolvimento Web pelo SENAC
-        SP, reforçando meu compromisso com aprendizado contínuo.
+      <p className="mt-4 leading-8 text-[var(--muted)] sm:text-lg">
+        Concluí em 2026 minha pós-graduação em Desenvolvimento Web pelo SENAC
+        SP e sigo investindo em aprendizado contínuo, incluindo ferramentas de
+        produtividade com IA, como Claude Code e Codex.
       </p>
-      <p className="pb-4 align-left font-extralight">
-        Busco desafios em ambientes dinâmicos, nos quais eu possa transformar
-        requisitos complexos em produtos digitais de qualidade.
+      <p className="mt-4 leading-8 text-[var(--muted)] sm:text-lg">
+        Estou aberto a desafios em ambientes dinâmicos, nos quais eu possa
+        contribuir com visão sistêmica, qualidade técnica e evolução contínua
+        de produtos digitais.
       </p>
 
     </motion.section>

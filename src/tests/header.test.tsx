@@ -14,7 +14,7 @@ describe("Component: Header", () => {
         { name: "Sobre", hash: "#about" },
         { name: "Experiência", hash: "#experience" },
         { name: "Projetos", hash: "#projects" },
-        { name: "Skills", hash: "#skills" },
+        { name: "Habilidades", hash: "#skills" },
         { name: "Cursos", hash: "#courses" },
         { name: "Contato", hash: "#contact" },
       ];

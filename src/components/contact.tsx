@@ -15,7 +15,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-20 w-full text-center sm:mb-28"
       initial={{
         opacity: 0,
       }}
@@ -29,18 +29,18 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Fale comigo</SectionHeading>
+      <SectionHeading>Vamos conversar</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Você pode falar comigo diretamente pelo e-mail{" "}
+      <p className="-mt-6 text-[var(--muted)] dark:text-white/80">
+      Tem um projeto, oportunidade ou desafio em tecnologia? Fale comigo pelo e-mail{" "}
         <a className="underline" href="mailto:samuel.d.alencar@gmail.com">
           samuel.d.alencar@gmail.com
         </a>{" "}
-        ou usar o formulário abaixo.
+        ou através deste formulário.
       </p>
 
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="glass-surface mt-8 flex flex-col rounded-3xl p-5 text-left sm:p-7 dark:text-black"
         name="senderEmail"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
@@ -54,7 +54,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 rounded-xl border border-[var(--line-color)] bg-white/70 px-4 outline-none transition-all placeholder:text-gray-400 focus:border-[var(--accent)] focus:ring-2 focus:ring-teal-500/15 dark:bg-white/90"
           name="senderEmail"
           type="email"
           required
@@ -62,7 +62,7 @@ export default function Contact() {
           placeholder="Seu e-mail"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="my-3 h-52 rounded-xl border border-[var(--line-color)] bg-white/70 p-4 outline-none transition-all placeholder:text-gray-400 focus:border-[var(--accent)] focus:ring-2 focus:ring-teal-500/15 dark:bg-white/90"
           name="message"
           placeholder="Mensagem"
           required

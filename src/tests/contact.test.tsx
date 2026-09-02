@@ -20,14 +20,14 @@ describe("Component: Contact Form", () => {
     );
 
 
-    const title = screen.getByText("Fale comigo");
+    const title = screen.getByText("Vamos conversar");
     expect(title).toBeInTheDocument();
 
     const introTextPart1 = screen.getByText(
-      /Por favor contacte-me diretamente em/i
+      /Tem um projeto, oportunidade ou desafio em tecnologia\?/i
     );
     expect(introTextPart1).toBeInTheDocument();
-    const introTextPart2 = screen.getByText(/ou através deste formulário./i);
+    const introTextPart2 = screen.getByText(/ou usar o formulário abaixo./i);
     expect(introTextPart2).toBeInTheDocument();
 
     const introLinkEmail = screen.getByText(/samuel.d.alencar@gmail.com/i);

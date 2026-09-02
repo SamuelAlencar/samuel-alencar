@@ -16,19 +16,20 @@ export default function Experience() {
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="experience" ref={ref} className="mb-28 w-full scroll-mt-28 sm:mb-40">
       <SectionHeading>Experiência</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+              className="timeline-card"
               contentStyle={{
                 background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                  theme === "light" ? "rgba(255, 255, 255, 0.78)" : "rgba(19, 39, 42, 0.78)",
                 boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
+                border: "1px solid var(--line-color)",
                 textAlign: "left",
-                padding: "1.3rem 2rem",
+                padding: "1.5rem 2rem",
                 visibility: "visible",
               }}
               contentArrowStyle={{
@@ -46,14 +47,14 @@ export default function Experience() {
                 visibility: "visible",
               }}
             >
-              <h3 className="!font-normal text-lg">{item.title}</h3>
-              <p className="!font-light !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-extralight text-gray-700 dark:text-white/75 ">
+              <h3 className="!font-semibold text-xl tracking-tight text-[var(--ink)]">{item.title}</h3>
+              <p className="!mt-1 !font-medium text-[var(--accent-strong)]">{item.location}</p>
+              <p className="!mt-3 !font-light leading-7 text-[var(--muted)]">
                 {item.description}
               </p>
               {item.flags.length > 1 ? (
                 <h3 className="font-normal pt-4">
-                  Tecnologias utilizadas
+                  Stack e ferramentas
                 </h3>
               ) : null}
 
@@ -62,7 +63,7 @@ export default function Experience() {
                   {item.flags.map((flag) => (
                     <li
                       key={flag}
-                      className="text-xs bg-white borderBlack rounded-xl px-2 py-1 dark:bg-white/10 dark:text-white/80 hover:transform hover:scale-105 transition-all cursor-pointer"
+                      className="cursor-pointer rounded-lg border border-[var(--line-color)] bg-white/60 px-2.5 py-1.5 text-[0.68rem] font-medium text-[var(--muted)] transition-all hover:-translate-y-0.5 hover:border-[var(--accent)] hover:text-[var(--accent-strong)] dark:bg-white/5 dark:text-white/70"
                     >
                       {flag}
                     </li>
