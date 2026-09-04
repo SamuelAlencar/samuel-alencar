@@ -76,10 +76,18 @@ export const experiencesData = [
   {
     title: "Pós-graduação em Desenvolvimento Web",
     location: "SENAC SP",
-    description: "Conclusão: agosto de 2026",
+    description:
+      "Especialização em desenvolvimento de sites e aplicações web, da construção de interfaces front-end à programação back-end e integração com bancos de dados. A formação também aprofunda práticas de segurança, metodologias ágeis e arquitetura de software, com foco em soluções de qualidade, desempenho e escalabilidade.",
     icon: React.createElement(LuGraduationCap),
     date: "2025 - 2026",
-    flags: [],
+    flags: [
+      "HTML, CSS e JavaScript",
+      "Front-end e Back-end",
+      "Bancos SQL e NoSQL",
+      "Segurança Web",
+      "Scrum e Kanban",
+      "Arquitetura de Software",
+    ],
   },
   {
     title: "Analista de Sistemas | SESC SP",
