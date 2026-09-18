@@ -1,5 +1,6 @@
 import Navigation from "./components/navigation";
-import InteractiveOrbit from "./components/interactive-orbit";
+import ParticleStory from "./components/particle-story";
+import HeroEnergy from "./components/hero-energy";
 import ProjectGallery from "./components/project-gallery";
 import ScrollEffects from "./components/scroll-effects";
 import Skills from "./components/skills";
@@ -14,19 +15,23 @@ export default function Home() {
       <ScrollEffects />
       <Navigation />
       <main id="conteudo">
+        <div className="hero-stage">
         <section className="hero container" id="inicio" aria-labelledby="hero-title">
           <div className="hero-copy">
             <div className="hero-introduction"><span className="tiny-line" /> OLÁ, EU SOU SAMUEL ALENCAR</div>
-            <h1 id="hero-title">Transformando<br />ideias em<br /><span>experiências.</span><span className="hero-asterisk" aria-hidden="true">✳</span></h1>
+            <h1 id="hero-title"><span className="hero-title-line">Transformando</span><span className="hero-title-line">ideias em</span><span className="hero-title-line hero-title-accent">experiências.</span><span className="hero-asterisk" aria-hidden="true">✳</span></h1>
             <p className="hero-description">Analista de Sistemas & Full Stack Developer.<br />Conecto tecnologia, pessoas e negócios através de experiências digitais que fazem a diferença.</p>
             <div className="hero-actions"><a className="button button-dark" href="#projetos">Explore meus projetos <Icon name="arrow" size={18} /></a><a className="button button-outline" href="/curriculo-samuel-alencar.pdf" download>Baixar currículo <Icon name="download" size={17} /></a></div>
             <div className="hero-location"><span className="green-dot" /> Atuação atual na CAOA Chery <span className="location-divider" /> São Paulo, Brasil</div>
           </div>
-          <InteractiveOrbit />
+          <HeroEnergy />
           <div className="hero-bottom"><div className="hero-stat"><strong>14<span>+</span></strong><span>Anos em desenvolvimento</span></div><div className="hero-stat"><strong>06</strong><span>Empresas na trajetória</span></div><div className="hero-stat"><strong>Full stack<span>.</span></strong><span>Da interface à integração</span></div><a className="scroll-cue" href="#sobre"><span>UM POUCO MAIS SOBRE MIM</span><Icon name="down" size={17} /></a></div>
         </section>
+        </div>
 
         <div className="companies-strip"><div className="container"><span className="companies-caption">EXPERIÊNCIAS QUE<br />FAZEM PARTE DE MIM</span><div className="company-logos" aria-label="Empresas da trajetória"><span className="logo-caoa">CAOA<span>CHERY</span></span><span className="logo-sesc">Sesc<span>SP</span></span><span className="logo-salon">salon<span>line</span></span><span className="logo-carrefour">Carrefour</span><span className="logo-compass">compass<span>.uol</span></span><span className="logo-tok">Tok&Stok</span></div></div></div>
+
+        <ParticleStory />
 
         <section className="about-section section container" id="sobre" aria-labelledby="about-title">
           <div className="section-heading" data-reveal><span className="section-index">01 / SOBRE MIM</span><h2 id="about-title">Mais do que código.<br /><span>Conexões que fazem sentido.</span></h2></div>
