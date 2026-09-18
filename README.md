@@ -1,84 +1,62 @@
-# Portfolio Package
+# Portfólio — Samuel Alencar
 
-Este pacote fornece os scripts e dependências necessários para configurar um site de portfólio. Ele inclui ferramentas para desenvolvimento, construção, teste e implantação.
+Portfólio profissional com Next.js (App Router), TypeScript e CSS. Apresenta trajetória, projetos, formação e contatos de Samuel Alencar.
 
-## Instalação
+## Executar
 
-Para instalar o pacote, você pode usar npm:
-
-```bash
-yarn install
-```
-
-## Scripts
+Com Node.js 20.9 ou superior e npm:
 
 ```bash
-yarn run dev
+npm install
+npm run dev
 ```
-- **dev**: Executa o servidor de desenvolvimento.
+
+Abra o endereço informado pelo terminal, normalmente http://localhost:3000. Se essa porta estiver ocupada, o Next.js escolhe a próxima disponível.
+
+## Verificar e compilar
 
 ```bash
-yarn run build
-```
-- **build**: Constrói a aplicação de produção.
-
-```bash
-yarn run start
-```
-- **start**: Inicia o servidor de produção.
-
-```bash
-yarn run lint
-```
-- **lint**: Analisa o código-fonte.
-
-```bash
-yarn run test
-```
-- **test**: Executa testes em modo de observação.
-
-```bash
-yarn run coverage
-```
-- **coverage**: Gera um relatório de cobertura de testes.
-
-## Dependências
-
-### Dependências Principais
-- ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat&logo=next.js) (^14.0.3): Framework React para produção.
-- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react) (^18.2.0): Biblioteca JavaScript para construir interfaces de usuário.
-- ![React DOM](https://img.shields.io/badge/-React_DOM-000000?style=flat&logo=react) (^18.2.0): Ponto de entrada para o React DOM.
-- ![Axios](https://img.shields.io/badge/-Axios-000000?style=flat&logo=axios) (^1.6.2): Cliente HTTP baseado em promessas.
-- ![SWR](https://img.shields.io/badge/-SWR-000000?style=flat&logo=vercel) (^2.2.4): Biblioteca de Hooks React para busca de dados remotos.
-- ![Framer Motion](https://img.shields.io/badge/-Framer_Motion-000000?style=flat&logo=framer) (^10.16.5): Biblioteca de animação para React.
-- ![React Icons](https://img.shields.io/badge/-React_Icons-000000?style=flat&logo=react) (^4.12.0): Biblioteca de ícones para componentes React.
-- ![React Hot Toast](https://img.shields.io/badge/-React_Hot_Toast-000000?style=flat&logo=react) (^2.4.1): Biblioteca de notificações de toasts para React.
-- ![React Vertical Timeline Component](https://img.shields.io/badge/-React_Vertical_Timeline_Component-000000?style=flat&logo=react) (^3.6.0): Componente de linha do tempo vertical para React.
-- ![HTML-to-Text](https://img.shields.io/badge/-HTML_to_Text-000000?style=flat&logo=node.js) (^9.0.5): Converte HTML para texto simples.
-
-### Dependências de Desenvolvimento
-- ![Jest](https://img.shields.io/badge/-Jest-000000?style=flat&logo=jest) (^29.7.0): Framework de teste JavaScript.
-- ![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript) (^5): Superset tipado de JavaScript.
-- ![ESLint](https://img.shields.io/badge/-ESLint-000000?style=flat&logo=eslint) (^8): Verificador de JavaScript e TypeScript.
-- ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-000000?style=flat&logo=tailwind-css) (^3.3.0): Framework CSS de utilidade em primeiro lugar.
-- ![PostCSS](https://img.shields.io/badge/-PostCSS-000000?style=flat&logo=postcss) (^8): Pós-processador CSS.
-- ![Autoprefixer](https://img.shields.io/badge/-Autoprefixer-000000?style=flat&logo=postcss) (^10.0.1): Gerador de prefixo de fornecedor CSS.
-- ![Babel Preset React](https://img.shields.io/badge/-Babel_Preset_React-000000?style=flat&logo=babel) (^7.24.1): Preset Babel para React.
-- ![clsx](https://img.shields.io/badge/-clsx-000000?style=flat&logo=node.js) (^2.0.0): Utilitário para construir strings de className.
-- ![Vest](https://img.shields.io/badge/-Vest-000000?style=flat&logo=node.js) (^5.1.4): Biblioteca de teste de validação.
-- ![Sharp](https://img.shields.io/badge/-Sharp-000000?style=flat&logo=node.js) (^0.32.6): Biblioteca de processamento de imagem Node.js de alto desempenho.
-
-## Repositório
-
-O código-fonte deste pacote está disponível no [GitHub](https://github.com/SamuelAlencar/samuel-alencar.git).
-
-## Autor
-
-Este pacote foi criado por samuel_alencar.
-
-## Licença
-
-Este pacote está licenciado sob a Licença MIT.
+npm run build
+npm run typecheck
 ```
 
-Agora o conteúdo está pronto para ser copiado e colado diretamente em um arquivo README.md em um repositório GitHub.
+Após a compilação, `npm start` executa a versão de produção.
+
+## Personalizar o conteúdo
+
+- `app/data/portfolio.ts`: contatos, experiências, formação, cursos e habilidades.
+- `app/data/projects.ts`: descrição, categoria, tecnologias, imagem e link de cada projeto.
+- `app/page.tsx`: organização das seções e textos de apresentação.
+- `app/globals.css`: cores, temas, animações e layouts responsivos.
+- `app/layout.tsx`: título, descrição, idioma e fonte local.
+- `public/curriculo-samuel-alencar.pdf`: currículo disponibilizado para download.
+- `public/projects/`: capturas dos projetos, usadas pelo componente `next/image`.
+- `public/fonts/`: arquivos locais da fonte Manrope e licença.
+- `app/icon.svg`: ícone do site.
+
+## Componentes interativos
+
+Em `app/components/`:
+
+- `navigation.tsx`: navegação, indicação da seção ativa, menu móvel e tema persistido no navegador.
+- `interactive-orbit.tsx`: tecnologias clicáveis e cartão com inclinação suave ao mover o mouse.
+- `project-gallery.tsx`: filtros por categoria, expansão da lista e detalhes em um `dialog` nativo.
+- `skills.tsx`: seleção de categorias de habilidades.
+- `contact-actions.tsx`: cópia do e-mail com confirmação ou mensagem de erro.
+- `scroll-effects.tsx`: entrada de seções na tela e progresso de rolagem.
+- `ui-icon.tsx`: pequenos ícones SVG compartilhados.
+
+A página principal continua sendo um componente de servidor; `"use client"` é usado nos componentes que precisam de estado, eventos ou APIs do navegador. A experiência e os cursos usam elementos nativos `details` e `summary`.
+
+As animações respeitam `prefers-reduced-motion`. O conteúdo permanece visível sem animações. Os modais oferecem fechamento com Escape, foco contido e retorno ao botão de origem. Não há bibliotecas adicionais de animação ou de componentes.
+
+## Fontes do conteúdo
+
+- Currículo `CV (2).pdf` fornecido pelo autor, com cargos, datas, formação e contatos.
+- [Portfólio de referência](https://samuel-alencar-ten.vercel.app/), consultado em 17/09/2026, para descrições e capturas dos projetos.
+- “14+ anos em desenvolvimento” usa janeiro de 2012 como início da atuação profissional em desenvolvimento. As seis empresas são contadas sem duplicar os dois cargos na Tok&Stok.
+- Projetos sem captura no portfólio original usam composições identificadas como ilustrativas. Links que apontavam incorretamente para outra empresa foram omitidos; os detalhes continuam disponíveis no próprio portfólio.
+
+O contato funciona por links de e-mail, LinkedIn e WhatsApp. Não há formulário ou serviço de envio de mensagens no servidor.
+
+Referência técnica: [documentação do Next.js](https://nextjs.org/docs/app/getting-started).
