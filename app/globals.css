@@ -87,6 +87,8 @@ h1 > .hero-title-accent { color: var(--accent); }
 .hero-stat strong { font-size: 27px; font-weight: 600; letter-spacing: -1px; }
 .hero-stat strong > span { color: var(--accent); }
 .hero-stat > span { font-size: 10px; color: var(--muted); }
+.project-counter .counter-number { color: inherit; display: inline-block; min-width: 2ch; font-variant-numeric: tabular-nums; }
+.project-counter small { font-size: 8px; color: var(--muted); max-width: 150px; }
 .scroll-cue { margin-left: auto; display: flex; gap: 16px; align-items: center; color: var(--muted); }
 .scroll-cue > span { font-size: 8px; letter-spacing: 1.4px; }
 .scroll-cue svg { animation: nudge-down 2s ease-in-out infinite; }
@@ -509,41 +511,67 @@ summary::-webkit-details-marker { display: none; }
   .social-links { gap: 12px; }
   .contact-section h2 { font-size: 30px; }
 }
-.particle-story { --story-progress: 0; position: relative; height: 165svh; background: #050403; color: #ece8dc; }
-.particle-story-stage { position: sticky; top: 73px; height: calc(100svh - 73px); min-height: 600px; overflow: hidden; isolation: isolate; }
+.particle-story { --story-progress: 0; position: relative; background: #050403; color: #ece8dc; }
+.particle-story-stage { position: relative; display: flex; flex-direction: column; align-items: center; gap: 48px; padding: 90px 32px 55px; overflow: hidden; isolation: isolate; }
 .particle-story-canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; pointer-events: none; }
 .particle-story-stage::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 50% 40%, #050403b3, transparent 65%); }
-.story-heading { text-align: center; position: absolute; top: 23%; width: 100%; padding-inline: 24px; transform: translateY(calc(var(--story-progress) * -35px)); }
+.story-heading { text-align: center; width: 100%; }
 .story-eyebrow { display: block; font: 9px var(--font-mono); letter-spacing: 3px; color: #b4a58a; margin-bottom: 30px; }
 .story-heading h2 { font-size: clamp(25px, 4vw, 58px); line-height: 1.18; letter-spacing: -.04em; font-weight: 500; }
 .story-heading h2 span { color: #ece8dc; }
-.story-cards { position: absolute; inset: 58% 8% auto; display: flex; justify-content: space-between; gap: 24px; }
-.story-card { width: 280px; padding: 28px; border: 1px solid #54402a; border-radius: 9px; background: #17130ce8; color: #b8af9d; outline: 1px dashed #4c3c29; outline-offset: -7px; transform: translateY(calc(var(--story-progress) * -65px)); }
-.story-card:nth-child(2) { margin-top: 45px; transform: translateY(calc(var(--story-progress) * -120px)); }
+.story-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: min(1080px, 100%); gap: 24px; }
+.story-card { min-width: 0; padding: 32px; border: 1px solid #54402a; border-radius: 9px; background: #17130ce8; color: #b8af9d; outline: 1px dashed #4c3c29; outline-offset: -7px; transition: transform .45s ease, border-color .45s, box-shadow .45s, background .45s; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .story-card:hover { transform: translateY(-8px); border-color: #ce8147; background: #241a10f2; box-shadow: 0 16px 40px #ce681e20; }
+}
 .story-card > span { color: #d8753e; font: 9px var(--font-mono); letter-spacing: 2px; }
 .story-card p { margin-top: 15px; font-size: 13px; line-height: 1.6; }
-.story-next { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); display: flex; gap: 22px; align-items: center; white-space: nowrap; font-size: 8px; letter-spacing: 2px; color: #b8af9d; }
+.story-next { display: flex; gap: 22px; align-items: center; white-space: nowrap; font-size: 8px; letter-spacing: 2px; color: #b8af9d; }
 .story-next span { font-size: 20px; }
 @media (max-width: 700px) {
-  .particle-story { height: 155svh; }
-  .particle-story-stage { min-height: 580px; }
-  .story-heading { top: 22%; padding-inline: 18px; }
+  .particle-story-stage { padding: 60px 20px 35px; gap: 32px; }
   .story-eyebrow { font-size: 7px; letter-spacing: 2px; margin-bottom: 23px; }
-  .story-cards { inset: 52% 6% auto; justify-content: flex-end; }
-  .story-card { width: 215px; padding: 23px; }
-  .story-card:nth-child(2) { position: absolute; right: 18%; top: 155px; margin-top: 0; }
-  .story-card p { font-size: 11px; }
+  .story-cards { grid-template-columns: 1fr; gap: 16px; }
+  .story-card { padding: 26px; }
+  .story-card p { font-size: 13px; }
   .story-card > span { font-size: 7px; }
-  .story-next { bottom: 15px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .particle-story { height: auto; }
   .particle-story-stage { position: relative; top: 0; height: auto; min-height: 0; padding: 65px 24px; }
   .story-heading, .story-cards, .story-next { position: relative; inset: auto; transform: none; }
-  .story-cards { margin-block: 35px; flex-wrap: wrap; justify-content: center; }
+  .story-cards { margin-block: 0; }
   .story-card, .story-card:nth-child(2) { position: relative; inset: auto; transform: none; margin-top: 0; }
   .story-next { justify-content: center; }
 }
+
+.company-showcase { background: #15111d; color: #f4edff; padding: 44px 0 24px; border-block: 1px solid #ffffff18; }
+.company-showcase-heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 26px; }
+.company-eyebrow { color: #b8a1d0; font: 8px var(--font-mono); letter-spacing: 2px; }
+.company-showcase h2 { font-size: clamp(24px, 3vw, 35px); margin-top: 12px; letter-spacing: -1px; }
+.company-showcase h2 span { color: #b9a5d0; }
+.company-showcase-heading p { font-size: 11px; color: #b2a6bf; margin-top: 12px; line-height: 1.7; }
+.company-controls { display: flex; gap: 8px; flex-shrink: 0; }
+.company-controls button { height: 36px; width: 36px; border-radius: 50%; color: #ede0ff; background: #ffffff08; border: 1px solid #ffffff25; transition: background .3s, transform .3s; }
+.company-controls button:hover { background: #704792; transform: translateY(-2px); }
+.company-track { display: flex; gap: 16px; overflow-x: auto; padding: 12px max(24px, calc((100vw - 1200px) / 2)) 24px; scrollbar-width: thin; scrollbar-color: #715584 #21182b; overscroll-behavior-x: contain; }
+.company-tile { position: relative; isolation: isolate; flex: 0 0 225px; padding: 20px; text-align: left; border-radius: 12px; border: 1px solid #ffffff1a; background: linear-gradient(140deg, #ffffff09, #ffffff02); color: #bbaec9; overflow: hidden; transition: transform .4s, box-shadow .4s, border-color .4s, background .4s; }
+.company-tile::before { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at 80% 0%, #ae6cf533, transparent 70%); opacity: 0; transition: opacity .4s; }
+.company-tile:is(:hover, :focus-visible, .is-selected)::before { opacity: 1; }
+.company-tile:is(:hover, :focus-visible) { transform: translateY(-6px); border-color: #ba8ddb; box-shadow: 0 10px 25px #0004; }
+.company-tile:active { transform: translateY(-2px) scale(.97); }
+.company-tile-top { display: flex; justify-content: space-between; font: 9px var(--font-mono); letter-spacing: 2px; }
+.company-tile-top > span:last-child { font-size: 18px; transition: rotate .3s; }
+.company-tile:hover .company-tile-top > span:last-child { rotate: 45deg; }
+.company-tile strong { display: block; font-size: 24px; letter-spacing: -1px; margin: 22px 0 18px; white-space: nowrap; }
+.company-tile-type { font-size: 9px; letter-spacing: .3px; }
+.company-detail { min-height: 86px; padding-top: 20px; }
+.company-detail > p { font-size: 11px; color: #b2a6bf; }
+.company-detail > div { position: relative; padding-right: 44px; animation: reveal-card .35s ease; }
+.company-detail > div > span { font-size: 13px; font-weight: 600; }
+.company-detail p { font-size: 11px; line-height: 1.8; margin-top: 7px; color: #c3b7cf; }
+.company-detail button { position: absolute; top: 0; right: 0; width: 32px; height: 32px; border-radius: 50%; font-size: 22px; background: #ffffff0a; color: #ede0ff; }
+@media (max-width: 700px) { .company-showcase-heading { align-items: flex-start; flex-direction: column; gap: 18px; } .company-tile { flex-basis: 210px; } .company-tile strong { font-size: 22px; } .company-detail { min-height: 115px; } }
 
 /* Abertura imersiva, independente do tema escolhido para o restante da página. */
 .hero-stage { background: #080611; color: #f7f3ff; position: relative; overflow: hidden; isolation: isolate; --muted: #bdb2ce; --line: #ffffff26; --accent: #ceafff; }

@@ -30,7 +30,6 @@ export default function HeroEnergy() {
         {Array.from({ length: 32 }, (_, index) => <i key={index} style={{ "--x": `${(index * 37) % 100}%`, "--y": `${(index * 61) % 100}%`, "--delay": `${index * -.43}s`, "--duration": `${5 + index % 5}s` } as CSSProperties} />)}
       </div>
       <span className="energy-label energy-label-top">IDEIAS EM MOVIMENTO</span>
-      <span className="energy-label energy-label-bottom">{charged ? "ENERGIA ATIVADA · CLIQUE PARA DESATIVAR" : "EXPLORE COM O MOUSE · CLIQUE NO NÚCLEO"}</span>
     </div>
   );
 }

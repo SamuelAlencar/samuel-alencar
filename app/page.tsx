@@ -1,4 +1,6 @@
 import Navigation from "./components/navigation";
+import CompanyCarousel from "./components/company-carousel";
+import ProjectCounter from "./components/project-counter";
 import ParticleStory from "./components/particle-story";
 import HeroEnergy from "./components/hero-energy";
 import ProjectGallery from "./components/project-gallery";
@@ -25,11 +27,11 @@ export default function Home() {
             <div className="hero-location"><span className="green-dot" /> Atuação atual na CAOA Chery <span className="location-divider" /> São Paulo, Brasil</div>
           </div>
           <HeroEnergy />
-          <div className="hero-bottom"><div className="hero-stat"><strong>14<span>+</span></strong><span>Anos em desenvolvimento</span></div><div className="hero-stat"><strong>06</strong><span>Empresas na trajetória</span></div><div className="hero-stat"><strong>Full stack<span>.</span></strong><span>Da interface à integração</span></div><a className="scroll-cue" href="#sobre"><span>UM POUCO MAIS SOBRE MIM</span><Icon name="down" size={17} /></a></div>
+          <div className="hero-bottom"><ProjectCounter total={14} label="Anos em desenvolvimento" note="" /><ProjectCounter /><div className="hero-stat"><strong>06</strong><span>Empresas na trajetória</span></div><a className="scroll-cue" href="#sobre"><span>UM POUCO MAIS SOBRE MIM</span><Icon name="down" size={17} /></a></div>
         </section>
         </div>
 
-        <div className="companies-strip"><div className="container"><span className="companies-caption">EXPERIÊNCIAS QUE<br />FAZEM PARTE DE MIM</span><div className="company-logos" aria-label="Empresas da trajetória"><span className="logo-caoa">CAOA<span>CHERY</span></span><span className="logo-sesc">Sesc<span>SP</span></span><span className="logo-salon">salon<span>line</span></span><span className="logo-carrefour">Carrefour</span><span className="logo-compass">compass<span>.uol</span></span><span className="logo-tok">Tok&Stok</span></div></div></div>
+        <CompanyCarousel />
 
         <ParticleStory />
 

@@ -88,13 +88,25 @@ export const projects: Project[] = [
     id: "livelo",
     title: "Livelo",
     category: "E-commerce",
-    summary: "Funcionalidades e integrações para a jornada do usuário.",
+    summary: "Sustentação e desenvolvimento de novas funcionalidades.",
     description:
-      "Desenvolvimento de funcionalidades e integrações de alta complexidade, com foco em estabilidade, manutenção e evolução da jornada do usuário.",
+      "Atuação na sustentação e no desenvolvimento de novas funcionalidades para o site da Livelo, contribuindo para a manutenção e evolução da plataforma.",
     technologies: ["Oracle Commerce Cloud", "Knockout.js", "jQuery", "Design responsivo"],
     tone: "rose",
     image: "/projects/livelo.png",
     url: "https://www.livelo.com.br/",
+  },
+  {
+    id: "sesc-central-relacionamento",
+    title: "Central de Relacionamento Sesc SP",
+    category: "Aplicações",
+    summary: "Sustentação e desenvolvimento de novas funcionalidades.",
+    description:
+      "Atuação na sustentação e no desenvolvimento de novas funcionalidades para a Central de Relacionamento do Sesc SP, contribuindo para a manutenção e evolução da plataforma.",
+    technologies: ["Sustentação", "Desenvolvimento de funcionalidades"],
+    tone: "green",
+    illustration: "SESC",
+    url: "https://centralrelacionamento.sescsp.org.br/",
   },
   {
     id: "tokstok",

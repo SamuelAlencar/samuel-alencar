@@ -86,6 +86,7 @@ export default function ParticleStory() {
         <div className="story-cards">
           <article className="story-card"><span>01 / VISÃO</span><p>A tecnologia começa com uma boa pergunta. Entender pessoas e negócios dá direção ao código.</p></article>
           <article className="story-card"><span>02 / CONSTRUÇÃO</span><p>Da interface à integração, transformo desafios em experiências digitais com propósito.</p></article>
+          <article className="story-card"><span>03 / IMPACTO</span><p>O trabalho continua após a entrega: sustentar, evoluir e criar novas possibilidades para pessoas e negócios.</p></article>
         </div>
         <a className="story-next" href="#projetos">EXPLORE OS PROJETOS <span aria-hidden="true">↓</span></a>
       </div>
