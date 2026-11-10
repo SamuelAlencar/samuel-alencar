@@ -12,7 +12,7 @@ function ProjectPreview({ project }: { project: Project }) {
       {project.image ? (
         <Image
           src={project.image}
-          alt={`Captura do projeto ${project.title} no portfólio original`}
+          alt={`Imagem ilustrativa da interface do projeto ${project.title}`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 33vw"
           className="project-image"
@@ -168,9 +168,10 @@ export default function ProjectGallery() {
           <>
             <ProjectPreview project={selectedProject} />
             <div className="dialog-content">
-              <span className="dialog-eyebrow">PROJETO EM DESTAQUE · {selectedProject.category}</span>
+              <span className="dialog-eyebrow">{selectedProject.status} · {selectedProject.category}</span>
               <h2 id="project-dialog-title">{selectedProject.title}</h2>
               <p id="project-dialog-description">{selectedProject.description}</p>
+              {selectedProject.imageNote && <p className="project-access-note">{selectedProject.imageNote}</p>}
               <h3>Tecnologias e ferramentas</h3>
               <div className="dialog-tags">
                 {selectedProject.technologies.map((technology) => <span key={technology}>{technology}</span>)}

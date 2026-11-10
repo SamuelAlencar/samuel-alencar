@@ -16,11 +16,11 @@ const manrope = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Samuel Alencar — Full Stack Developer",
-  description: "Portfólio de Samuel Alencar, Analista de Sistemas e Full Stack Developer. Experiências em aplicações web, mobile, e-commerce e integrações.",
+  title: "Samuel Alencar — Analista de Sistemas e Full Stack Sênior",
+  description: "Portfólio de Samuel Alencar, Analista de Sistemas e Desenvolvedor Full Stack Sênior com experiência em liderança técnica, e-commerce, integrações, DevOps e IA aplicada.",
   openGraph: {
-    title: "Samuel Alencar — Código com propósito",
-    description: "Tecnologia, pessoas e negócios conectados através de experiências digitais.",
+    title: "Samuel Alencar — Full Stack Sênior e liderança técnica",
+    description: "Aplicações web e mobile, e-commerce, integrações, DevOps e IA aplicada com visão de negócio.",
     locale: "pt_BR",
     type: "website",
   },

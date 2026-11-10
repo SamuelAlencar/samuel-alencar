@@ -21,9 +21,9 @@ export default function Home() {
         <section className="hero container" id="inicio" aria-labelledby="hero-title">
           <div className="hero-copy">
             <div className="hero-introduction"><span className="tiny-line" /> OLÁ, EU SOU SAMUEL ALENCAR</div>
-            <h1 id="hero-title"><span className="hero-title-line">Transformando</span><span className="hero-title-line">ideias em</span><span className="hero-title-line hero-title-accent">experiências.</span><span className="hero-asterisk" aria-hidden="true">✳</span></h1>
-            <p className="hero-description">Analista de Sistemas & Full Stack Developer.<br />Conecto tecnologia, pessoas e negócios através de experiências digitais que fazem a diferença.</p>
-            <div className="hero-actions"><a className="button button-dark" href="#projetos">Explore meus projetos <Icon name="arrow" size={18} /></a><a className="button button-outline" href="/curriculo-samuel-alencar.pdf" download>Baixar currículo <Icon name="download" size={17} /></a></div>
+            <h1 id="hero-title"><span className="hero-title-line">Tecnologia que</span><span className="hero-title-line">conecta produto,</span><span className="hero-title-line hero-title-accent">pessoas e negócio.</span><span className="hero-asterisk" aria-hidden="true">✳</span></h1>
+            <p className="hero-description">Analista de Sistemas e Desenvolvedor Full Stack Sênior.<br />Uno implementação, liderança técnica e visão de negócio em produtos digitais.</p>
+            <div className="hero-actions"><a className="button button-dark" href="#projetos">Conhecer projetos <Icon name="arrow" size={18} /></a><a className="button button-outline" href="#experiencia">Ver trajetória <Icon name="arrow" size={17} /></a></div>
             <div className="hero-location"><span className="green-dot" /> Atuação atual na CAOA Chery <span className="location-divider" /> São Paulo, Brasil</div>
           </div>
           <HeroEnergy />
@@ -36,10 +36,10 @@ export default function Home() {
         <ParticleStory />
 
         <section className="about-section section container" id="sobre" aria-labelledby="about-title">
-          <div className="section-heading" data-reveal><span className="section-index">01 / SOBRE MIM</span><h2 id="about-title">Mais do que código.<br /><span>Conexões que fazem sentido.</span></h2></div>
+          <div className="section-heading" data-reveal><span className="section-index">01 / SOBRE MIM</span><h2 id="about-title">Do e-commerce à<br /><span>engenharia de produto.</span></h2></div>
           <div className="about-grid" data-reveal>
             <div className="about-note"><span className="note-icon" aria-hidden="true">✳</span><p>Visão de negócio.<br />Curiosidade de quem<br />nunca para de aprender.</p><span className="note-signature">Samuel Alencar <span>↗</span></span></div>
-            <div className="about-copy"><p>Sou Samuel, <strong>Analista de Sistemas e Desenvolvedor Full Stack Sênior</strong>. Minha trajetória começou no universo digital da Tok&Stok e evoluiu para a construção de aplicações, e-commerces e integrações em empresas de grande porte.</p><p>Gosto de entender o desafio antes de escolher a tecnologia. Da arquitetura front-end à integração entre sistemas, combino visão de negócio, liderança técnica e atenção à experiência de quem está do outro lado da tela.</p><p>Hoje, na <strong>CAOA Chery</strong>, atuo com soluções web e mobile. E sigo aprendendo: concluí minha pós-graduação em Desenvolvimento Web no SENAC e exploro o uso de IA no dia a dia do desenvolvimento.</p><div className="about-links"><a href={profile.linkedin} target="_blank" rel="noopener noreferrer">Mais sobre minha trajetória <Icon name="arrow" size={17} /></a><span><Icon name="pin" size={15} /> {profile.location}</span></div></div>
+            <div className="about-copy"><p>Sou Samuel, <strong>Analista de Sistemas e Desenvolvedor Full Stack Sênior</strong>. Evoluí no e-commerce e hoje atuo na criação de aplicações web e mobile, integrações corporativas, arquitetura front-end, DevOps e IA aplicada ao desenvolvimento.</p><p>Participo desde a compreensão do problema e das decisões técnicas até a implementação, a entrega e a evolução das soluções. Trabalho para conectar experiência, operação e objetivos de negócio — com responsabilidade técnica e colaboração entre times.</p><p>Na <strong>CAOA Chery</strong>, conduzo soluções e ferramentas corporativas com visão de produto, incluindo práticas de Azure DevOps e avaliação de agentes de IA para produtividade. Também concluí minha pós-graduação em Desenvolvimento Web no SENAC.</p><div className="about-links"><a href={profile.linkedin} target="_blank" rel="noopener noreferrer">Mais sobre minha trajetória <Icon name="arrow" size={17} /></a><span><Icon name="pin" size={15} /> {profile.location}</span></div></div>
           </div>
         </section>
 

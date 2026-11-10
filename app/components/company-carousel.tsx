@@ -3,16 +3,16 @@
 import { useEffect, useRef, useState } from "react";
 
 const companies = [
-  { name: "CAOA Chery", type: "Empresa", detail: "Soluções web e mobile, sustentação e evolução de aplicações. Caminhando para o terceiro projeto.", color: "#b89aff" },
-  { name: "Sesc SP", type: "Empresa", detail: "Atuação em mais de 12 projetos, com sustentação e desenvolvimento de novas funcionalidades.", color: "#68c9f0" },
-  { name: "Salon Line", type: "Empresa", detail: "Cerca de 3 projetos, incluindo e-commerce, funcionalidades e integrações de negócio.", color: "#f396c5" },
-  { name: "Carrefour", type: "Empresa", detail: "Desenvolvimento e sustentação de e-commerce VTEX IO e BackOffice, com foco em arquitetura front-end.", color: "#79a9ff" },
-  { name: "Compass.UOL", type: "Consultoria", detail: "Desenvolvimento para diferentes clientes, incluindo Livelo, Bradesco Seguros, Riachuelo e Yamaha Motos.", color: "#f9ab65" },
-  { name: "Tok&Stok", type: "Empresa", detail: "Três versões de e-commerce, além de hotsites, landing pages e intranet.", color: "#addb95" },
-  { name: "Livelo", type: "Cliente · Compass.UOL", detail: "Sustentação e desenvolvimento de novas funcionalidades para a plataforma Livelo, via Compass.UOL.", color: "#f58bd2" },
+  { name: "CAOA Chery", type: "Empresa", detail: "Responsabilidade técnica por soluções web e mobile, com DevOps, IA aplicada e visão de produto para ferramentas corporativas.", color: "#b89aff" },
+  { name: "Sesc SP", type: "Empresa", detail: "Sustentação e evolução de mais de 20 sistemas, incluindo aplicações de bilheteria, biometria e integração com catracas.", color: "#68c9f0" },
+  { name: "Salon Line", type: "Empresa", detail: "Implantação e sustentação de e-commerce, conectando Oracle Commerce Cloud, ERP TOTVS e sistemas Linx.", color: "#f396c5" },
+  { name: "Carrefour", type: "Empresa", detail: "Evolução de e-commerce, marketplace e back-office, com arquitetura de microfrontends e práticas de DevOps.", color: "#79a9ff" },
+  { name: "Compass.UOL", type: "Consultoria", detail: "Implantação, sustentação e evolução de e-commerce para clientes como Livelo e Yamaha, além de outros projetos da consultoria.", color: "#f9ab65" },
+  { name: "Tok&Stok", type: "Empresa", detail: "Participação em três versões do e-commerce, acompanhando sua evolução de catálogo digital para canal de vendas relevante.", color: "#addb95" },
+  { name: "Livelo", type: "Cliente · Compass.UOL", detail: "Implantação, sustentação e novas funcionalidades na plataforma de e-commerce Livelo, por meio da Compass.UOL.", color: "#f58bd2" },
   { name: "Bradesco Seguros", type: "Cliente · Compass.UOL", detail: "Atuação em projetos para Bradesco Seguros por meio da consultoria Compass.UOL.", color: "#ff8e98" },
   { name: "Riachuelo", type: "Cliente · Compass.UOL", detail: "Atuação em projetos para Riachuelo por meio da consultoria Compass.UOL.", color: "#dccdb7" },
-  { name: "Yamaha Motos", type: "Cliente · Compass.UOL", detail: "Evolução da jornada de e-commerce com experiências interativas, via Compass.UOL.", color: "#bcadff" },
+  { name: "Yamaha Motos", type: "Cliente · Compass.UOL", detail: "Implantação e evolução do e-commerce com recursos interativos, por meio da Compass.UOL.", color: "#bcadff" },
 ];
 
 export default function CompanyCarousel() {

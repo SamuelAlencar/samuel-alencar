@@ -15,13 +15,14 @@ export const experiences = [
     role: "Desenvolvedor Fullstack",
     period: "Abr 2026 — Atual",
     description:
-      "Desenvolvimento de soluções web e mobile para conectar atendimento ao cliente, tecnologia e gestão do negócio.",
+      "Responsabilidade técnica por ferramentas e soluções web e mobile, da implantação e evolução à sustentação, com visão de produto e negócio.",
     highlights: [
-      "Desenvolvimento, evolução e sustentação de aplicações web e aplicativos Android e iOS.",
-      "Análise de requisitos, diagnóstico de falhas e otimização de sistemas em colaboração com stakeholders e parceiros.",
-      "Gestão de backlog, pipelines de CI/CD e práticas de DevOps com Azure DevOps.",
+      "Concepção e supervisão do desenvolvimento de soluções web e mobile, conectando requisitos, decisões técnicas e evolução contínua.",
+      "Adoção e disseminação de práticas de DevOps com Azure DevOps, incluindo gestão de backlog, pipelines de CI/CD e sustentação.",
+      "Estudo, avaliação e aplicação de agentes e ferramentas de IA para aumentar a produtividade no desenvolvimento e apoiar novas soluções.",
+      "Visão de produto para transformar ferramentas corporativas em iniciativas com potencial de gerar receita e ampliar o retorno sobre o desenvolvimento.",
     ],
-    technologies: ["Next.js", "React Native", "Node.js", "SQL Server", "Azure DevOps"],
+    technologies: ["Next.js", "React Native", "Node.js", "SQL Server", "Azure DevOps", "CI/CD", "Agentes de IA"],
   },
   {
     id: "sesc-sp",
@@ -29,11 +30,12 @@ export const experiences = [
     role: "Analista de Sistemas",
     period: "Jul 2024 — Dez 2025",
     description:
-      "Aplicações web voltadas à melhoria do atendimento ao cliente e à gestão, da análise de requisitos à sustentação.",
+      "Sustentação e evolução de mais de 20 sistemas que conectam serviços, atendimento e gestão no SESC SP.",
     highlights: [
-      "Levantamento e documentação de requisitos funcionais e não funcionais para novas aplicações.",
-      "Desenvolvimento, correção de bugs e otimização de sistemas em parceria com equipes multidisciplinares.",
-      "Condução de reuniões técnicas e gestão de backlog e pipelines de entrega contínua.",
+      "Sustentação, manutenção e modernização de mais de 20 aplicações, incluindo sistemas legados e novas demandas de negócio.",
+      "Desenvolvimento de soluções de reconhecimento facial, biometria e integração com catracas para apoiar atendimento e acesso físico.",
+      "Participação na evolução do aplicativo de bilheteria, em conjunto com a sustentação de outras experiências digitais do SESC.",
+      "Levantamento de requisitos, diagnóstico de falhas e gestão de backlog e pipelines de entrega com equipes multidisciplinares.",
     ],
     technologies: ["React", "Next.js", "Angular", "Java", "Spring", "Oracle", "Azure DevOps"],
   },
@@ -43,14 +45,14 @@ export const experiences = [
     role: "Analista de Sistemas Sênior",
     period: "Jan 2023 — Nov 2023",
     description:
-      "Liderança técnica, arquitetura front-end e integrações entre e-commerce e sistemas de negócio.",
+      "Implantação e sustentação de e-commerce, conectando a plataforma Oracle Commerce Cloud aos sistemas corporativos.",
     highlights: [
-      "Desenvolvimento de funcionalidades, hotsites e landing pages em Oracle Commerce Cloud e WordPress.",
-      "Integrações entre e-commerce, ERP, CRM e TMS com Oracle Integration Cloud e Digibee.",
-      "Atuação na implantação do Linx Commerce, incluindo integrações com TOTVS, pagamentos e suporte ao go-live.",
-      "Coordenação técnica de projetos e execução de testes unitários, de integração e end-to-end.",
+      "Implantação e sustentação da Oracle Commerce Cloud, com desenvolvimento de funcionalidades, hotsites e landing pages.",
+      "Implementação de integrações de alta complexidade entre o ERP TOTVS, sistemas Linx e o e-commerce com Oracle Integration Cloud.",
+      "Atuação na implantação do Linx Commerce, incluindo integrações de pagamentos e suporte ao go-live.",
+      "Estudo e avaliação de tecnologias e ferramentas de IA voltadas ao ganho de produtividade no desenvolvimento.",
     ],
-    technologies: ["React", "Oracle Commerce Cloud", "Linx Commerce", "OIC", "Digibee", "WordPress"],
+    technologies: ["React", "Oracle Commerce Cloud", "Linx Commerce", "Oracle Integration Cloud", "TOTVS", "WordPress", "IA aplicada"],
   },
   {
     id: "carrefour",
@@ -58,13 +60,14 @@ export const experiences = [
     role: "Analista de Sistemas E-commerce Sênior",
     period: "Ago 2021 — Jan 2023",
     description:
-      "Desenvolvimento de aplicações para e-commerce VTEX IO e BackOffice, com foco em arquitetura e qualidade técnica.",
+      "Consultoria para desenvolvimento e evolução do e-commerce, marketplace e portal de back-office do Grupo Carrefour.",
     highlights: [
-      "Desenvolvimento e manutenção de aplicações web para e-commerce e portal BackOffice.",
-      "Definição e padronização de arquiteturas front-end, code reviews e documentação técnica.",
-      "Análise de causa raiz de incidentes e participação na condução de cerimônias Scrum e Kanban.",
+      "Desenvolvimento e evolução de aplicações web para e-commerce VTEX IO, marketplace e portal de back-office.",
+      "Modernização da arquitetura front-end com microfrontends e Module Federation, além de padrões técnicos, code reviews e documentação.",
+      "Evolução de práticas e processos de DevOps para apoiar qualidade, entrega e sustentação das plataformas.",
+      "Análise de causa raiz de incidentes e participação em cerimônias Scrum e Kanban.",
     ],
-    technologies: ["React", "TypeScript", "VTEX IO", "PostgreSQL", "GCP", "GitLab"],
+    technologies: ["React", "TypeScript", "VTEX IO", "Module Federation", "Microfrontends", "PostgreSQL", "GCP", "GitLab", "DevOps"],
   },
   {
     id: "compass-uol",
@@ -72,11 +75,11 @@ export const experiences = [
     role: "Desenvolvedor Front-end Sênior",
     period: "Dez 2019 — Ago 2021",
     description:
-      "Desenvolvimento de experiências de e-commerce e aplicações web com padrões de código e documentação compartilhados.",
+      "Implantação, sustentação e evolução de e-commerces em Oracle Commerce Cloud para clientes atendidos pela Compass.UOL, incluindo Livelo e Yamaha.",
     highlights: [
-      "Levantamento de requisitos e desenvolvimento de funcionalidades em Oracle Commerce Cloud e WordPress.",
-      "Definição de padrões de código, code reviews e manutenção da qualidade técnica.",
-      "Criação de documentação e manuais de uso, com participação em cerimônias Scrum.",
+      "Implantação, sustentação e desenvolvimento de funcionalidades na Oracle Commerce Cloud para Livelo e Yamaha, por meio da Compass.UOL.",
+      "Desenvolvimento de experiências de e-commerce e aplicações web em Oracle Commerce Cloud e WordPress para outros clientes da consultoria.",
+      "Definição de padrões de código, code reviews, documentação e manuais de uso para manter a qualidade técnica.",
     ],
     technologies: ["JavaScript", "Knockout.js", "Oracle Commerce Cloud", "WordPress", "GitLab"],
   },
@@ -86,11 +89,11 @@ export const experiences = [
     role: "Desenvolvedor Front-end Pleno",
     period: "Jan 2012 — Nov 2019",
     description:
-      "Construção e evolução do e-commerce e do site institucional, com componentes para IBM WebSphere e VTEX.",
+      "Participação, em equipe, no desenvolvimento e na evolução de três versões do e-commerce e do site institucional.",
     highlights: [
-      "Desenvolvimento e manutenção de funcionalidades para e-commerce e site institucional.",
-      "Criação de componentes para IBM WebSphere Commerce e VTEX Legacy.",
-      "Sustentação de aplicações, correção de bugs, code reviews e documentação de sistemas.",
+      "Contribuição para três versões do e-commerce, que evoluiu de ferramenta majoritariamente usada como catálogo pelas lojas para um canal de vendas relevante da rede.",
+      "Desenvolvimento e manutenção de funcionalidades e componentes para IBM WebSphere Commerce e VTEX Legacy.",
+      "Sustentação de aplicações, correção de bugs, code reviews e documentação de sistemas em colaboração com a equipe.",
     ],
     technologies: ["JavaScript", "HTML", "CSS", "jQuery", "IBM WebSphere", "VTEX Legacy"],
   },
@@ -137,23 +140,23 @@ export const courses = [
 
 export const skillGroups = [
   {
-    label: "Front-end",
+    label: "Web & mobile",
     skills: ["React", "Next.js", "TypeScript", "JavaScript", "React Native", "Angular", "HTML5", "CSS3"],
   },
   {
-    label: "Back-end",
-    skills: ["Node.js", "Java", "Spring Framework", "Integrações de sistemas"],
+    label: "Arquitetura & back-end",
+    skills: ["Node.js", "Java", "Spring Framework", "Microfrontends", "Module Federation", "Integrações de sistemas"],
   },
   {
-    label: "Dados & cloud",
-    skills: ["PostgreSQL", "MySQL", "Oracle", "SQL Server", "MongoDB", "Azure DevOps", "GCP", "CI/CD"],
+    label: "Integrações & dados",
+    skills: ["Oracle Integration Cloud", "Digibee", "TOTVS", "Linx", "PostgreSQL", "MySQL", "Oracle", "SQL Server", "MongoDB"],
   },
   {
     label: "E-commerce",
     skills: ["VTEX IO", "Oracle Commerce Cloud", "Linx Commerce", "IBM WebSphere", "WordPress", "OIC", "Digibee"],
   },
   {
-    label: "IA & ferramentas",
-    skills: ["Git", "GitHub", "GitLab", "Figma", "Jira", "GitHub Copilot", "Claude Code", "Codex", "Gemini"],
+    label: "DevOps & IA aplicada",
+    skills: ["Azure DevOps", "CI/CD", "Git", "GitHub", "GitLab", "Jira", "GitHub Copilot", "Claude Code", "Codex", "Gemini", "Agentes de IA"],
   },
 ];
