@@ -31,7 +31,7 @@ export default function InteractiveOrbit() {
       <div className="code-card" style={{ transform: `perspective(800px) rotateX(${tilt.y}deg) rotateY(${tilt.x}deg)` }}>
         <div className="code-card-bar"><span><i /><i /><i /></span><span>samuel.dev</span><span>↗</span></div>
         <div className="code-card-body">
-          <span className="code-comment">// construindo possibilidades</span>
+          <span className="code-comment">{`// construindo possibilidades`}</span>
           <div className="code-name"><span>&lt;</span>Samuel <span>/&gt;</span></div>
           <div className="code-line"><span>const</span> foco = <em>&apos;{current ? current.name : "impacto real"}&apos;</em>;</div>
           <div className="code-line"><span>return</span> {current ? current.code : "ideias.transformar()"};</div>

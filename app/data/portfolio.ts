@@ -8,6 +8,37 @@ export const profile = {
   location: "Carapicuíba, São Paulo",
 };
 
+export const featuredExperiences = [
+  {
+    company: "Tok&Stok", period: "2012 — 2019", title: "E-commerce que se tornou canal de vendas",
+    context: "O canal digital era usado principalmente como catálogo pelas equipes das lojas.",
+    contribution: "Participei, em equipe, do desenvolvimento e da evolução de três versões do e-commerce, incluindo front-end, componentes e sustentação.",
+    result: "A evolução ajudou a consolidar o canal como um dos maiores faturamentos da rede na comparação com as unidades físicas.",
+    technologies: ["JavaScript", "IBM WebSphere", "VTEX Legacy"],
+  },
+  {
+    company: "Compass.UOL", period: "2019 — 2021", title: "Operações de e-commerce para Livelo e Yamaha",
+    context: "Clientes da consultoria precisavam implantar, sustentar e evoluir suas jornadas de compra.",
+    contribution: "Atuei na Oracle Commerce Cloud, desenvolvendo funcionalidades e mantendo padrões de código, documentação e qualidade técnica.",
+    result: "Contribuí para a evolução contínua das operações de e-commerce de Livelo e Yamaha por meio da Compass.UOL.",
+    technologies: ["Oracle Commerce Cloud", "Knockout.js", "JavaScript"],
+  },
+  {
+    company: "Grupo Carrefour", period: "2021 — 2023", title: "Modernização de plataformas de varejo",
+    context: "E-commerce, marketplace e back-office demandavam evolução arquitetural e operação sustentável.",
+    contribution: "Atuei como consultor no desenvolvimento das aplicações, na adoção de microfrontends com Module Federation e na evolução das práticas de DevOps.",
+    result: "Apoiei a modernização da arquitetura front-end e a continuidade das plataformas em operação.",
+    technologies: ["React", "TypeScript", "VTEX IO", "Module Federation"],
+  },
+  {
+    company: "Salon Line", period: "2023", title: "E-commerce conectado aos sistemas corporativos",
+    context: "A operação precisava conectar a plataforma de venda aos fluxos do ERP TOTVS e dos sistemas Linx.",
+    contribution: "Atuei na implantação e sustentação da Oracle Commerce Cloud e em integrações de alta complexidade com Oracle Integration Cloud.",
+    result: "Contribuí para conectar e-commerce e sistemas corporativos, além de avaliar tecnologias para novas iniciativas.",
+    technologies: ["Oracle Commerce Cloud", "Oracle Integration Cloud", "TOTVS", "Linx"],
+  },
+];
+
 export const experiences = [
   {
     id: "caoa-chery",

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Icon } from "./ui-icon";
 
-const links = [["sobre", "Sobre"], ["projetos", "Projetos"], ["experiencia", "Experiência"], ["habilidades", "Habilidades"]];
+const links = [["experiencias", "Experiências"], ["projetos", "Projetos"], ["habilidades", "Competências"], ["contato", "Contato"]];
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
@@ -44,7 +44,7 @@ export default function Navigation() {
       <div className="header-inner container">
         <a className="brand" href="#inicio" aria-label="Samuel Alencar — início" onClick={() => setOpen(false)}>
           <span className="brand-monogram">sa<span>.</span></span>
-          <span className="brand-name">Samuel Alencar<span>DEVELOPER & PROBLEM SOLVER</span></span>
+          <span className="brand-name">Samuel Alencar<span>DESENVOLVEDOR DE SOFTWARE</span></span>
         </a>
         <nav id="main-navigation" className={`navigation ${open ? "is-open" : ""}`} aria-label="Navegação principal">
           {links.map(([id, label]) => <a key={id} href={`#${id}`} className={active === id ? "active" : ""} aria-current={active === id ? "location" : undefined} onClick={() => setOpen(false)}>{label}</a>)}

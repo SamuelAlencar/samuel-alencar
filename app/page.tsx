@@ -1,59 +1,35 @@
 import Navigation from "./components/navigation";
-import CompanyCarousel from "./components/company-carousel";
-import ProjectCounter from "./components/project-counter";
-import ParticleStory from "./components/particle-story";
-import HeroEnergy from "./components/hero-energy";
 import ProjectGallery from "./components/project-gallery";
 import ScrollEffects from "./components/scroll-effects";
 import Skills from "./components/skills";
 import ContactActions from "./components/contact-actions";
 import { Icon } from "./components/ui-icon";
-import { courses, education, experiences, profile } from "./data/portfolio";
+import { courses, education, experiences, featuredExperiences, profile } from "./data/portfolio";
 
 export default function Home() {
-  return (
-    <>
-      <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
-      <ScrollEffects />
-      <Navigation />
-      <main id="conteudo">
-        <div className="hero-stage">
-        <section className="hero container" id="inicio" aria-labelledby="hero-title">
-          <div className="hero-copy">
-            <div className="hero-introduction"><span className="tiny-line" /> OLÁ, EU SOU SAMUEL ALENCAR</div>
-            <h1 id="hero-title"><span className="hero-title-line">Tecnologia que</span><span className="hero-title-line">conecta produto,</span><span className="hero-title-line hero-title-accent">pessoas e negócio.</span><span className="hero-asterisk" aria-hidden="true">✳</span></h1>
-            <p className="hero-description">Analista de Sistemas e Desenvolvedor Full Stack Sênior.<br />Uno implementação, liderança técnica e visão de negócio em produtos digitais.</p>
-            <div className="hero-actions"><a className="button button-dark" href="#projetos">Conhecer projetos <Icon name="arrow" size={18} /></a><a className="button button-outline" href="#experiencia">Ver trajetória <Icon name="arrow" size={17} /></a></div>
-            <div className="hero-location"><span className="green-dot" /> Atuação atual na CAOA Chery <span className="location-divider" /> São Paulo, Brasil</div>
-          </div>
-          <HeroEnergy />
-          <div className="hero-bottom"><ProjectCounter total={14} label="Anos em desenvolvimento" note="" /><ProjectCounter /><div className="hero-stat"><strong>06</strong><span>Empresas na trajetória</span></div><a className="scroll-cue" href="#sobre"><span>UM POUCO MAIS SOBRE MIM</span><Icon name="down" size={17} /></a></div>
-        </section>
+  return <>
+    <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <ScrollEffects /><Navigation />
+    <main id="conteudo">
+      <section className="hero container" id="inicio" aria-labelledby="hero-title">
+        <div className="hero-copy">
+          <p className="eyebrow hero-eyebrow">SAMUEL ALENCAR · DESENVOLVEDOR DE SOFTWARE</p>
+          <h1 id="hero-title">Produtos digitais que aproximam <span>tecnologia e operação.</span></h1>
+          <p className="hero-description">Atuo no desenvolvimento e na evolução de e-commerces, integrações corporativas e aplicações web. Uno implementação full stack, arquitetura front-end e colaboração técnica para transformar necessidades de negócio em software sustentável.</p>
+          <div className="hero-actions"><a className="button button-primary" href="#experiencias">Ver experiências <Icon name="arrow" size={18} /></a><a className="button button-secondary" href="/curriculo-samuel-alencar.pdf" download>Baixar currículo <Icon name="download" size={17} /></a></div>
         </div>
+        <aside className="hero-aside" aria-label="Resumo profissional"><span className="hero-aside-label">EM FOCO</span><p>Desenvolvimento full stack, e-commerce, integrações e modernização de aplicações.</p><dl className="hero-metrics"><div><dt>03</dt><dd>versões de e-commerce na Tok&Stok</dd></div><div><dt>20+</dt><dd>sistemas sustentados e evoluídos no SESC</dd></div><div><dt>06</dt><dd>empresas na trajetória</dd></div></dl></aside>
+      </section>
 
-        <CompanyCarousel />
+      <section className="experience-feature-section" id="experiencias" aria-labelledby="experiences-title"><div className="container"><div className="section-heading split-heading" data-reveal><div><span className="section-index">01 / EXPERIÊNCIAS EM DESTAQUE</span><h2 id="experiences-title">Projetos com <span>contexto e contribuição.</span></h2></div><p>Uma leitura rápida sobre desafios de negócio, minha atuação técnica e os resultados documentados.</p></div><div className="featured-experiences">{featuredExperiences.map((experience, index) => <article className="featured-experience" key={experience.company} data-reveal><div className="featured-experience-head"><span>0{index + 1}</span><p>{experience.period}</p></div><h3>{experience.company}</h3><h4>{experience.title}</h4><dl><div><dt>Contexto</dt><dd>{experience.context}</dd></div><div><dt>Minha contribuição</dt><dd>{experience.contribution}</dd></div><div><dt>Resultado</dt><dd>{experience.result}</dd></div></dl><div className="tag-list">{experience.technologies.map((technology) => <span key={technology}>{technology}</span>)}</div></article>)}</div></div></section>
 
-        <ParticleStory />
+      <section className="trajectory-section section container" id="trajetoria" aria-labelledby="trajectory-title"><div className="section-heading split-heading" data-reveal><div><span className="section-index">02 / TRAJETÓRIA COMPLETA</span><h2 id="trajectory-title">Evolução técnica em diferentes <span>contextos de negócio.</span></h2></div><a className="text-link" href="/curriculo-samuel-alencar.pdf" download>Currículo completo <Icon name="download" size={17} /></a></div><div className="experience-list" data-reveal>{experiences.map((experience, index) => <details className="experience-item" key={experience.id} open={index === 0}><summary><span className="experience-period">{experience.period}{index === 0 && <span className="current-badge">ATUALMENTE</span>}</span><span className="experience-summary"><strong>{experience.company}</strong><span>{experience.role}</span></span><span className="experience-toggle" aria-hidden="true"><Icon name="plus" size={18} /></span></summary><div className="experience-content"><p>{experience.description}</p><ul>{experience.highlights.map((item) => <li key={item}>{item}</li>)}</ul><div className="tag-list">{experience.technologies.map((technology) => <span key={technology}>{technology}</span>)}</div></div></details>)}</div></section>
 
-        <section className="about-section section container" id="sobre" aria-labelledby="about-title">
-          <div className="section-heading" data-reveal><span className="section-index">01 / SOBRE MIM</span><h2 id="about-title">Do e-commerce à<br /><span>engenharia de produto.</span></h2></div>
-          <div className="about-grid" data-reveal>
-            <div className="about-note"><span className="note-icon" aria-hidden="true">✳</span><p>Visão de negócio.<br />Curiosidade de quem<br />nunca para de aprender.</p><span className="note-signature">Samuel Alencar <span>↗</span></span></div>
-            <div className="about-copy"><p>Sou Samuel, <strong>Analista de Sistemas e Desenvolvedor Full Stack Sênior</strong>. Evoluí no e-commerce e hoje atuo na criação de aplicações web e mobile, integrações corporativas, arquitetura front-end, DevOps e IA aplicada ao desenvolvimento.</p><p>Participo desde a compreensão do problema e das decisões técnicas até a implementação, a entrega e a evolução das soluções. Trabalho para conectar experiência, operação e objetivos de negócio — com responsabilidade técnica e colaboração entre times.</p><p>Na <strong>CAOA Chery</strong>, conduzo soluções e ferramentas corporativas com visão de produto, incluindo práticas de Azure DevOps e avaliação de agentes de IA para produtividade. Também concluí minha pós-graduação em Desenvolvimento Web no SENAC.</p><div className="about-links"><a href={profile.linkedin} target="_blank" rel="noopener noreferrer">Mais sobre minha trajetória <Icon name="arrow" size={17} /></a><span><Icon name="pin" size={15} /> {profile.location}</span></div></div>
-          </div>
-        </section>
-
-        <section className="projects-section section" id="projetos" aria-labelledby="projects-title"><div className="container"><div className="section-heading heading-with-aside" data-reveal><div><span className="section-index">02 / PROJETOS SELECIONADOS</span><h2 id="projects-title">Do desafio à <span>solução.</span></h2></div><p>E-commerce, aplicações e novas possibilidades.<br />Um pouco do que ajudei a construir.</p></div><ProjectGallery /></div></section>
-
-        <section className="experience-section section container" id="experiencia" aria-labelledby="experience-title"><div className="experience-layout"><div className="experience-intro" data-reveal><span className="section-index">03 / TRAJETÓRIA</span><h2 id="experience-title">Cada etapa,<br />um novo <span>repertório.</span></h2><p>De experiências digitais no varejo a aplicações que conectam operações inteiras.</p><a className="text-link" href="/curriculo-samuel-alencar.pdf" download>Currículo completo <Icon name="download" size={17} /></a><div className="journey-mark" aria-hidden="true"><span>2006</span><div /><span>HOJE ↗</span></div></div><div className="timeline">{experiences.map((experience, index) => <details className="experience-item" key={experience.id} open={index === 0} data-reveal><summary><span className={`timeline-dot ${index === 0 ? "current" : ""}`} /><span className="experience-summary"><span className="experience-period">{experience.period}{index === 0 && <span className="current-badge">ATUALMENTE</span>}</span><h3>{experience.company}</h3><span className="experience-role">{experience.role}</span></span><span className="experience-toggle"><Icon name="plus" size={18} /></span></summary><div className="experience-content"><p>{experience.description}</p><ul>{experience.highlights.map((item) => <li key={item}>{item}</li>)}</ul><div className="tag-list">{experience.technologies.map((technology) => <span key={technology}>{technology}</span>)}</div></div></details>)}</div></div></section>
-
-        <section className="skills-section section" id="habilidades" aria-labelledby="skills-title"><div className="container"><div className="section-heading heading-with-aside" data-reveal><div><span className="section-index">04 / HABILIDADES</span><h2 id="skills-title">Uma stack. <span>Muitas possibilidades.</span></h2></div><p>Ferramentas mudam. A vontade de<br />resolver problemas continua.</p></div><div data-reveal><Skills /></div></div></section>
-
-        <section className="education-section section container" id="formacao" aria-labelledby="education-title"><div className="section-heading" data-reveal><span className="section-index">05 / APRENDIZADO CONTÍNUO</span><h2 id="education-title">Sempre em <span>construção.</span></h2></div><div className="education-grid" data-reveal>{education.map((item, index) => <article className="education-card" key={item.degree}><div className="education-icon" aria-hidden="true">{index === 0 ? "✧" : "⌘"}</div><div><span className="education-period">{item.period}</span><h3>{item.degree}</h3><p>{item.school}</p></div><Icon name="arrow" size={20} /></article>)}</div><details className="courses-disclosure"><summary>Cursos e especializações <span>{courses.length} cursos <Icon name="plus" size={18} /></span></summary><div className="courses-grid">{courses.map((course) => <article key={course.title}><span>{course.year}</span><h3>{course.title}</h3><p>{course.school}</p></article>)}</div></details></section>
-
-        <section className="contact-section" id="contato" aria-labelledby="contact-title"><div className="container contact-inner" data-reveal><div className="contact-copy"><span className="section-index">06 / VAMOS CONVERSAR</span><h2 id="contact-title">Boas ideias merecem<br /><span>uma boa conexão.</span><span className="contact-star" aria-hidden="true">✳</span></h2><p>Um projeto, um desafio ou uma troca de ideias.<br />Vamos descobrir o que podemos construir juntos?</p><ContactActions /></div><div className="social-links"><a href={profile.linkedin} target="_blank" rel="noopener noreferrer"><span><b aria-hidden="true">in</b> LinkedIn</span><Icon name="arrow" size={19} /></a><a href={profile.github} target="_blank" rel="noopener noreferrer"><span><Icon name="github" size={19} /> GitHub</span><Icon name="arrow" size={19} /></a><a href={profile.whatsapp} target="_blank" rel="noopener noreferrer"><span><Icon name="mail" size={19} /> WhatsApp</span><Icon name="arrow" size={19} /></a></div></div></section>
-      </main>
-      <footer className="site-footer container"><a className="footer-brand" href="#inicio">sa<span>.</span></a><span>© {new Date().getFullYear()} Samuel Alencar. Feito com intenção.</span><a className="back-top" href="#inicio">De volta ao topo <Icon name="arrow" size={16} /></a></footer>
-    </>
-  );
+      <section className="skills-section section" id="habilidades" aria-labelledby="skills-title"><div className="container"><div className="section-heading split-heading" data-reveal><div><span className="section-index">03 / COMPETÊNCIAS</span><h2 id="skills-title">Tecnologia a serviço do <span>problema certo.</span></h2></div><p>Da interface à entrega contínua, as ferramentas acompanham o contexto de cada produto.</p></div><div data-reveal><Skills /></div></div></section>
+      <section className="projects-section section" id="projetos" aria-labelledby="projects-title"><div className="container"><div className="section-heading split-heading" data-reveal><div><span className="section-index">04 / PROJETOS</span><h2 id="projects-title">Mais contexto sobre o que <span>ajudei a construir.</span></h2></div><p>Detalhes de e-commerce, aplicações internas, integrações e iniciativas em avaliação.</p></div><ProjectGallery /></div></section>
+      <section className="education-section section container" id="formacao" aria-labelledby="education-title"><div className="section-heading" data-reveal><span className="section-index">05 / FORMAÇÃO</span><h2 id="education-title">Aprendizado como parte da <span>prática profissional.</span></h2></div><div className="education-grid" data-reveal>{education.map((item) => <article className="education-card" key={item.degree}><span>{item.period}</span><div><h3>{item.degree}</h3><p>{item.school}</p></div></article>)}</div><details className="courses-disclosure"><summary>Cursos e especializações <span>{courses.length} cursos <Icon name="plus" size={18} /></span></summary><div className="courses-grid">{courses.map((course) => <article key={course.title}><span>{course.year}</span><h3>{course.title}</h3><p>{course.school}</p></article>)}</div></details></section>
+      <section className="contact-section" id="contato" aria-labelledby="contact-title"><div className="container contact-inner" data-reveal><div className="contact-copy"><span className="section-index">06 / CONTATO</span><h2 id="contact-title">Vamos conversar sobre o próximo <span>desafio.</span></h2><p>Disponível para conversar sobre produtos digitais, e-commerce, integrações e evolução de aplicações.</p><ContactActions /></div><div className="social-links"><a href={profile.linkedin} target="_blank" rel="noopener noreferrer"><span><b aria-hidden="true">in</b> LinkedIn</span><Icon name="arrow" size={19} /></a><a href={profile.github} target="_blank" rel="noopener noreferrer"><span><Icon name="github" size={19} /> GitHub</span><Icon name="arrow" size={19} /></a><a href={profile.whatsapp} target="_blank" rel="noopener noreferrer"><span><Icon name="mail" size={19} /> WhatsApp</span><Icon name="arrow" size={19} /></a></div></div></section>
+    </main>
+    <footer className="site-footer container"><a className="footer-brand" href="#inicio">SA<span>.</span></a><span>© {new Date().getFullYear()} Samuel Alencar</span><a className="back-top" href="#inicio">Voltar ao topo <Icon name="arrow" size={16} /></a></footer>
+  </>;
 }
