@@ -84,18 +84,6 @@ export const projects: Project[] = [
     status: "Aplicação em evolução",
   },
   {
-    id: "caoa-ia",
-    title: "CAOA Agentes de IA",
-    category: "IA",
-    summary: "Avaliação e desenvolvimento de agentes para produtividade.",
-    description:
-      "Iniciativas de estudo, avaliação e desenvolvimento de agentes de inteligência artificial para ampliar a produtividade e apoiar novos fluxos de operação e atendimento. Trata-se de uma frente em avaliação e evolução, não de resultado comercial já realizado.",
-    technologies: ["Agentes de IA", "Node.js", "Integrações", "React", "Azure DevOps"],
-    tone: "sand",
-    illustration: "IA",
-    status: "Iniciativa em avaliação e evolução",
-  },
-  {
     id: "livelo",
     title: "Livelo",
     category: "E-commerce",
