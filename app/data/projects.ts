@@ -125,18 +125,6 @@ export const projects: Project[] = [
     url: "https://www.tokstok.com.br/",
   },
   {
-    id: "caoa-sites",
-    title: "CAOA Sites Operacionais",
-    category: "Aplicações",
-    summary: "Ferramentas web para operação e atendimento.",
-    description:
-      "Concepção, desenvolvimento e sustentação de aplicações internas para apoiar processos operacionais e atendimento. A frente combina interfaces web, serviços e práticas de entrega contínua para evoluir ferramentas corporativas.",
-    technologies: ["React", "Next.js", "Node.js", "Azure DevOps"],
-    tone: "blue",
-    illustration: "CAOA",
-    status: "Soluções internas em evolução",
-  },
-  {
     id: "sesc-bilheteria",
     title: "Site Bilheteria SESC",
     category: "Aplicações",
